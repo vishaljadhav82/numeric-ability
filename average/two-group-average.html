@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Group Average - TCS NQT Practice</title>
+
+    <!-- MathJax CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+        .question {
+            background: #fff;
+            padding: 15px 20px;
+            margin: 12px 0;
+            border-radius: 6px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .solution {
+            margin-top: 8px;
+            padding: 10px;
+            background: #eaf2f8;
+            border-left: 4px solid #2980b9;
+            display: none;
+        }
+        button {
+            margin: 10px 5px 10px 0;
+            padding: 8px 16px;
+            background-color: #2980b9;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #1f618d;
+        }
+        .nav-buttons {
+            text-align: center;
+            margin-top: 20px;
+        }
+        a {
+            color: #e74c3c;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Group Average - TCS NQT Practice</h1>
+
+<!-- Q1 -->
+<div class="question">
+    <b>Q1:</b> Group A has 10 students with an average score of 70. Group B has 15 students with an average score of 80. Find the average score when both groups are combined.  
+    <button onclick="toggleSolution(0)">Show Solution</button>
+    <div class="solution">
+        Sum of Group A = \(10 \times 70 = 700\) <br>
+        Sum of Group B = \(15 \times 80 = 1200\) <br>
+        Total sum = \(700 + 1200 = 1900\) <br>
+        Total students = \(10 + 15 = 25\) <br>
+        Combined average = \(1900/25 = 76\) <br>
+        <b>Answer: 76</b>
+    </div>
+</div>
+
+<!-- Q2 -->
+<div class="question">
+    <b>Q2:</b> Group X has 12 people with an average income of 50,000. Group Y has 18 people with an average income of 60,000. Find the combined average income.  
+    <button onclick="toggleSolution(1)">Show Solution</button>
+    <div class="solution">
+        Sum of X = \(12 \times 50000 = 600000\) <br>
+        Sum of Y = \(18 \times 60000 = 1080000\) <br>
+        Total sum = \(1680000\) <br>
+        Total people = \(12 + 18 = 30\) <br>
+        Combined average = \(1680000 / 30 = 56000\) <br>
+        <b>Answer: 56,000</b>
+    </div>
+</div>
+
+<!-- Q3 -->
+<div class="question">
+    <b>Q3:</b> Two groups have averages 65 and 75 respectively. If each group has equal number of students, find the overall average.  
+    <button onclick="toggleSolution(2)">Show Solution</button>
+    <div class="solution">
+        Since equal number of students, overall average = \((65 + 75)/2 = 70\) <br>
+        <b>Answer: 70</b>
+    </div>
+</div>
+
+<!-- Q4 -->
+<div class="question">
+    <b>Q4:</b> Group A has 8 students with average 78, and Group B has 12 students with average 82. If one more student with score 90 joins Group B, find the new combined average.  
+    <button onclick="toggleSolution(3)">Show Solution</button>
+    <div class="solution">
+        Sum A = \(8 \times 78 = 624\) <br>
+        Original Sum B = \(12 \times 82 = 984\) <br>
+        New Sum B = \(984 + 90 = 1074\) <br>
+        Total sum = \(624 + 1074 = 1698\) <br>
+        Total students = \(8 + 13 = 21\) <br>
+        Combined average = \(1698/21 \approx 80.86\) <br>
+        <b>Answer: 80.86</b>
+    </div>
+</div>
+
+<!-- Q5 -->
+<div class="question">
+    <b>Q5:</b> A class of 20 students has an average of 75. Another class of 25 students has an average of 80. Find the difference between the combined average and the average of the larger class.  
+    <button onclick="toggleSolution(4)">Show Solution</button>
+    <div class="solution">
+        Sum of class1 = \(20 \times 75 = 1500\) <br>
+        Sum of class2 = \(25 \times 80 = 2000\) <br>
+        Total sum = 3500, total students = 45 <br>
+        Combined average = \(3500 / 45 \approx 77.78\) <br>
+        Difference = \(77.78 - 80 = -2.22\) <br>
+        <b>Answer: -2.22</b>
+    </div>
+</div>
+
+<!-- Q6 -->
+<div class="question">
+    <b>Q6:</b> Group A has 15 students with average marks 68, Group B has 10 students with average 72, and Group C has 5 students with average 80. Find the overall average.  
+    <button onclick="toggleSolution(5)">Show Solution</button>
+    <div class="solution">
+        Sum A = \(15 \times 68 = 1020\) <br>
+        Sum B = \(10 \times 72 = 720\) <br>
+        Sum C = \(5 \times 80 = 400\) <br>
+        Total sum = \(1020 + 720 + 400 = 2140\) <br>
+        Total students = 15 + 10 + 5 = 30 <br>
+        Combined average = \(2140 / 30 \approx 71.33\) <br>
+        <b>Answer: 71.33</b>
+    </div>
+</div>
+
+<!-- Q7 -->
+<div class="question">
+    <b>Q7:</b> Two groups have averages 50 and 70. If the combined average is 60, find the ratio of number of students in the two groups.  
+    <button onclick="toggleSolution(6)">Show Solution</button>
+    <div class="solution">
+        Let number of students = x and y <br>
+        \((50x + 70y)/(x+y) = 60 \Rightarrow 50x + 70y = 60x + 60y \Rightarrow 10y = 10x \Rightarrow x:y = 1:1\) <br>
+        <b>Answer: 1:1</b>
+    </div>
+</div>
+
+<!-- Q8 -->
+<div class="question">
+    <b>Q8:</b> Group X has 12 people with average 40. Group Y has 18 people with average 50. A new person joins Group X with score 70. Find the new combined average of X and Y.  
+    <button onclick="toggleSolution(7)">Show Solution</button>
+    <div class="solution">
+        Sum X original = \(12 \times 40 = 480\) <br>
+        New sum X = 480 + 70 = 550 <br>
+        Sum Y = \(18 \times 50 = 900\) <br>
+        Total sum = 550 + 900 = 1450 <br>
+        Total people = 13 + 18 = 31 <br>
+        Combined average = \(1450 / 31 \approx 46.77\) <br>
+        <b>Answer: 46.77</b>
+    </div>
+</div>
+
+<!-- Q9 -->
+<div class="question">
+    <b>Q9:</b> Class A has 20 students with average 65, Class B has 30 students with average 70, Class C has 25 students with average 75. Find the overall average.  
+    <button onclick="toggleSolution(8)">Show Solution</button>
+    <div class="solution">
+        Sum A = 20 × 65 = 1300 <br>
+        Sum B = 30 × 70 = 2100 <br>
+        Sum C = 25 × 75 = 1875 <br>
+        Total sum = 1300 + 2100 + 1875 = 5275 <br>
+        Total students = 20 + 30 + 25 = 75 <br>
+        Combined average = 5275 / 75 ≈ 70.33 <br>
+        <b>Answer: 70.33</b>
+    </div>
+</div>
+
+<!-- Q10 -->
+<div class="question">
+    <b>Q10:</b> Group A has average 85 and 10 students, Group B has average 75 and 15 students. How many students should be added to Group B so that combined average becomes 80?  
+    <button onclick="toggleSolution(9)">Show Solution</button>
+    <div class="solution">
+        Sum A = 10 × 85 = 850 <br>
+        Sum B = 15 × 75 = 1125 <br>
+        Let new students added = x <br>
+        New sum B = 1125 + 75x <br>
+        Combined average = (850 + 1125 + 75x)/(10 + 15 + x) = 80 <br>
+        1975 + 75x = 80 × (25 + x) = 2000 + 80x <br>
+        75x - 80x = 2000 - 1975 → -5x = 25 → x = -5 ❌ negative → need correction <br>
+        Actually formula: New B total = 1125 + 75x, total students = 10 + 15 + x = 25 + x <br>
+        Combined sum = 850 + 1125 + 75x = 1975 + 75x <br>
+        Average = 80 → 1975 + 75x = 80(25 + x) = 2000 + 80x → -5x = 25 → x = -5 ❌ Negative indicates **cannot reach 80 by adding 75-average students** <br>
+        <b>Answer: Not possible with 75-average students</b>
+    </div>
+</div>
+
+<div class="nav-buttons">
+    <a href="index.html"><button>Back to Average Topics</button></a>
+    <a href="weighted-average.html"><button>Next Topic</button></a>
+</div>
+
+<script>
+    const solutions = document.querySelectorAll('.solution');
+    function toggleSolution(index) {
+        const sol = solutions[index];
+        sol.style.display = (sol.style.display === 'block') ? 'none' : 'block';
+        if (window.MathJax) MathJax.typesetPromise([sol]);
+    }
+</script>
+
+</body>
+</html>

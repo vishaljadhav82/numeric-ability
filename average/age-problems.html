@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Problems - TCS NQT Practice</title>
+
+    <!-- MathJax CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+        .question {
+            background: #fff;
+            padding: 15px 20px;
+            margin: 12px 0;
+            border-radius: 6px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .solution {
+            margin-top: 8px;
+            padding: 10px;
+            background: #eaf2f8;
+            border-left: 4px solid #2980b9;
+            display: none;
+        }
+        button {
+            margin: 10px 5px 10px 0;
+            padding: 8px 16px;
+            background-color: #2980b9;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #1f618d;
+        }
+        .nav-buttons {
+            text-align: center;
+            margin-top: 20px;
+        }
+        a {
+            color: #e74c3c;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Age Problems - TCS NQT Practice</h1>
+
+<!-- Q1 -->
+<div class="question">
+    <b>Q1:</b> The average age of 5 people is 24 years. If one person aged 30 leaves, find the new average.  
+    <button onclick="toggleSolution(0)">Show Solution</button>
+    <div class="solution">
+        Total age = 5 × 24 = 120 <br>
+        New total age = 120 - 30 = 90 <br>
+        New average = 90 / 4 = 22.5 <br>
+        <b>Answer: 22.5 years</b>
+    </div>
+</div>
+
+<!-- Q2 -->
+<div class="question">
+    <b>Q2:</b> Average age of 6 children is 10 years. One more child joins with age 12. Find the new average.  
+    <button onclick="toggleSolution(1)">Show Solution</button>
+    <div class="solution">
+        Total age = 6 × 10 = 60 <br>
+        New total age = 60 + 12 = 72 <br>
+        New average = 72 / 7 ≈ 10.29 <br>
+        <b>Answer: 10.29 years</b>
+    </div>
+</div>
+
+<!-- Q3 -->
+<div class="question">
+    <b>Q3:</b> The average age of a father and his son is 35 years. If the father is 30 years older than the son, find their ages.  
+    <button onclick="toggleSolution(2)">Show Solution</button>
+    <div class="solution">
+        Let son's age = x → father = x + 30 <br>
+        Average = (x + x + 30)/2 = 35 → (2x + 30)/2 = 35 → 2x + 30 = 70 → 2x = 40 → x = 20 <br>
+        Father = 20 + 30 = 50 <br>
+        <b>Answer: Son = 20, Father = 50</b>
+    </div>
+</div>
+
+<!-- Q4 -->
+<div class="question">
+    <b>Q4:</b> Average age of 10 students in a class is 12 years. If teacher's age is included, average becomes 14 years. Find the teacher's age.  
+    <button onclick="toggleSolution(3)">Show Solution</button>
+    <div class="solution">
+        Total age of students = 10 × 12 = 120 <br>
+        Total age with teacher = 11 × 14 = 154 <br>
+        Teacher's age = 154 - 120 = 34 <br>
+        <b>Answer: 34 years</b>
+    </div>
+</div>
+
+<!-- Q5 -->
+<div class="question">
+    <b>Q5:</b> Average age of 3 men is 40 years. When a 30-year-old man is replaced by a 50-year-old man, find the new average.  
+    <button onclick="toggleSolution(4)">Show Solution</button>
+    <div class="solution">
+        Original total = 3 × 40 = 120 <br>
+        New total = 120 - 30 + 50 = 140 <br>
+        New average = 140 / 3 ≈ 46.67 <br>
+        <b>Answer: 46.67 years</b>
+    </div>
+</div>
+
+<!-- Q6 -->
+<div class="question">
+    <b>Q6:</b> Average age of A, B, and C is 24. Average age of A and B is 20. Find C's age.  
+    <button onclick="toggleSolution(5)">Show Solution</button>
+    <div class="solution">
+        Total age of A+B+C = 3 × 24 = 72 <br>
+        Total age of A+B = 2 × 20 = 40 <br>
+        C = 72 - 40 = 32 <br>
+        <b>Answer: 32 years</b>
+    </div>
+</div>
+
+<!-- Q7 -->
+<div class="question">
+    <b>Q7:</b> Average age of a group of 8 people is 28 years. If two people aged 30 and 32 leave, find the new average.  
+    <button onclick="toggleSolution(6)">Show Solution</button>
+    <div class="solution">
+        Total age = 8 × 28 = 224 <br>
+        New total = 224 - (30 + 32) = 162 <br>
+        New average = 162 / 6 = 27 <br>
+        <b>Answer: 27 years</b>
+    </div>
+</div>
+
+<!-- Q8 -->
+<div class="question">
+    <b>Q8:</b> Average age of husband, wife, and child is 28 years. Average age of husband and wife is 32 years. Find the child's age.  
+    <button onclick="toggleSolution(7)">Show Solution</button>
+    <div class="solution">
+        Total age of three = 3 × 28 = 84 <br>
+        Total age of husband + wife = 2 × 32 = 64 <br>
+        Child's age = 84 - 64 = 20 <br>
+        <b>Answer: 20 years</b>
+    </div>
+</div>
+
+<!-- Q9 -->
+<div class="question">
+    <b>Q9:</b> Average age of 5 men is 30 years. If one man aged 40 is replaced by a man aged 50, find the new average.  
+    <button onclick="toggleSolution(8)">Show Solution</button>
+    <div class="solution">
+        Original total = 5 × 30 = 150 <br>
+        New total = 150 - 40 + 50 = 160 <br>
+        New average = 160 / 5 = 32 <br>
+        <b>Answer: 32 years</b>
+    </div>
+</div>
+
+<!-- Q10 -->
+<div class="question">
+    <b>Q10:</b> Average age of 6 boys is 12 years. If their teacher’s age is included, average becomes 16. Find teacher’s age.  
+    <button onclick="toggleSolution(9)">Show Solution</button>
+    <div class="solution">
+        Total age of boys = 6 × 12 = 72 <br>
+        Total age with teacher = 7 × 16 = 112 <br>
+        Teacher's age = 112 - 72 = 40 <br>
+        <b>Answer: 40 years</b>
+    </div>
+</div>
+
+<div class="nav-buttons">
+    <a href="index.html"><button>Back to Average Topics</button></a>
+    <a href="joining-leaving-person.html"><button>Next Topic</button></a>
+</div>
+
+<script>
+    const solutions = document.querySelectorAll('.solution');
+    function toggleSolution(index) {
+        const sol = solutions[index];
+        sol.style.display = (sol.style.display === 'block') ? 'none' : 'block';
+        if (window.MathJax) MathJax.typesetPromise([sol]);
+    }
+</script>
+
+</body>
+</html>

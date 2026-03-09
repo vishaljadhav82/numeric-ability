@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weighted Average - TCS NQT Practice</title>
+
+    <!-- MathJax CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+        .question {
+            background: #fff;
+            padding: 15px 20px;
+            margin: 12px 0;
+            border-radius: 6px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .solution {
+            margin-top: 8px;
+            padding: 10px;
+            background: #eaf2f8;
+            border-left: 4px solid #2980b9;
+            display: none;
+        }
+        button {
+            margin: 10px 5px 10px 0;
+            padding: 8px 16px;
+            background-color: #2980b9;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #1f618d;
+        }
+        .nav-buttons {
+            text-align: center;
+            margin-top: 20px;
+        }
+        a {
+            color: #e74c3c;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Weighted Average - TCS NQT Practice</h1>
+
+<!-- Q1 -->
+<div class="question">
+    <b>Q1:</b> A student scored 80 in Maths, 90 in Physics, and 70 in Chemistry. If the weights of the subjects are 3, 4, and 2 respectively, find the weighted average.  
+    <button onclick="toggleSolution(0)">Show Solution</button>
+    <div class="solution">
+        Weighted average = \(\frac{(80×3)+(90×4)+(70×2)}{3+4+2} = \frac{240+360+140}{9} = 740/9 \approx 82.22\) <br>
+        <b>Answer: 82.22</b>
+    </div>
+</div>
+
+<!-- Q2 -->
+<div class="question">
+    <b>Q2:</b> In a class, 20 students scored 60 marks, 15 students scored 75 marks, and 10 students scored 90 marks. Find the weighted average of the class.  
+    <button onclick="toggleSolution(1)">Show Solution</button>
+    <div class="solution">
+        Weighted average = \(\frac{(20×60)+(15×75)+(10×90)}{20+15+10} = \frac{1200+1125+900}{45} = 3225/45 = 71.67\) <br>
+        <b>Answer: 71.67</b>
+    </div>
+</div>
+
+<!-- Q3 -->
+<div class="question">
+    <b>Q3:</b> A shop sold 10 kg of rice at $50/kg, 15 kg at $60/kg, and 20 kg at $55/kg. Find the weighted average price per kg.  
+    <button onclick="toggleSolution(2)">Show Solution</button>
+    <div class="solution">
+        Weighted average = \(\frac{(10×50)+(15×60)+(20×55)}{10+15+20} = \frac{500+900+1100}{45} = 2500/45 \approx 55.56\) <br>
+        <b>Answer: 55.56</b>
+    </div>
+</div>
+
+<!-- Q4 -->
+<div class="question">
+    <b>Q4:</b> In a test, two papers have weights 40% and 60%. A student scored 75 in the first paper and 85 in the second. Find the weighted average.  
+    <button onclick="toggleSolution(3)">Show Solution</button>
+    <div class="solution">
+        Weighted average = \((75×0.4) + (85×0.6) = 30 + 51 = 81\) <br>
+        <b>Answer: 81</b>
+    </div>
+</div>
+
+<!-- Q5 -->
+<div class="question">
+    <b>Q5:</b> Three batches of items have prices $10, $12, and $15. Quantities are 50, 30, and 20 respectively. Find the weighted average price.  
+    <button onclick="toggleSolution(4)">Show Solution</button>
+    <div class="solution">
+        Weighted average = \(\frac{(50×10)+(30×12)+(20×15)}{50+30+20} = \frac{500+360+300}{100} = 1160/100 = 11.6\) <br>
+        <b>Answer: 11.6</b>
+    </div>
+</div>
+
+<!-- Q6 -->
+<div class="question">
+    <b>Q6:</b> A student’s marks in 4 subjects are 70, 80, 90, 85. The weights are 1, 2, 3, 4 respectively. Find the weighted average.  
+    <button onclick="toggleSolution(5)">Show Solution</button>
+    <div class="solution">
+        Weighted average = \(\frac{(70×1)+(80×2)+(90×3)+(85×4)}{1+2+3+4} = \frac{70+160+270+340}{10} = 840/10 = 84\) <br>
+        <b>Answer: 84</b>
+    </div>
+</div>
+
+<!-- Q7 -->
+<div class="question">
+    <b>Q7:</b> Three friends scored 60, 75, 90. Their contributions to a group project are 20%, 30%, 50%. Find the weighted average score.  
+    <button onclick="toggleSolution(6)">Show Solution</button>
+    <div class="solution">
+        Weighted average = \((60×0.2) + (75×0.3) + (90×0.5) = 12 + 22.5 + 45 = 79.5\) <br>
+        <b>Answer: 79.5</b>
+    </div>
+</div>
+
+<!-- Q8 -->
+<div class="question">
+    <b>Q8:</b> In a factory, 100 units of A are produced at $20/unit, 150 units of B at $30/unit, and 50 units of C at $25/unit. Find the weighted average cost per unit.  
+    <button onclick="toggleSolution(7)">Show Solution</button>
+    <div class="solution">
+        Weighted average = \(\frac{(100×20)+(150×30)+(50×25)}{100+150+50} = \frac{2000+4500+1250}{300} = 7750/300 \approx 25.83\) <br>
+        <b>Answer: 25.83</b>
+    </div>
+</div>
+
+<!-- Q9 -->
+<div class="question">
+    <b>Q9:</b> A student’s marks in 3 tests are 50, 60, 70. Tests are weighted as 2, 3, 5. Find the weighted average.  
+    <button onclick="toggleSolution(8)">Show Solution</button>
+    <div class="solution">
+        Weighted average = \(\frac{(50×2)+(60×3)+(70×5)}{2+3+5} = \frac{100+180+350}{10} = 630/10 = 63\) <br>
+        <b>Answer: 63</b>
+    </div>
+</div>
+
+<!-- Q10 -->
+<div class="question">
+    <b>Q10:</b> A company has 3 products sold in quantities 200, 300, 500 units at prices 15, 20, 25 respectively. Find the weighted average price.  
+    <button onclick="toggleSolution(9)">Show Solution</button>
+    <div class="solution">
+        Weighted average = \(\frac{(200×15)+(300×20)+(500×25)}{200+300+500} = \frac{3000+6000+12500}{1000} = 21500/1000 = 21.5\) <br>
+        <b>Answer: 21.5</b>
+    </div>
+</div>
+
+<div class="nav-buttons">
+    <a href="index.html"><button>Back to Average Topics</button></a>
+    <a href="consecutive-numbers.html"><button>Next Topic</button></a>
+</div>
+
+<script>
+    const solutions = document.querySelectorAll('.solution');
+    function toggleSolution(index) {
+        const sol = solutions[index];
+        sol.style.display = (sol.style.display === 'block') ? 'none' : 'block';
+        if (window.MathJax) MathJax.typesetPromise([sol]);
+    }
+</script>
+
+</body>
+</html>

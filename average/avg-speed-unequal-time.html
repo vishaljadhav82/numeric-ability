@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Average Speed (Unequal Time) - TCS NQT</title>
+
+<!-- MathJax CDN -->
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
+
+<style>
+    body { font-family: Arial, sans-serif; background: #f7f7f7; padding: 20px; color: #333; }
+    h1 { text-align: center; color: #2c3e50; }
+    .question { background: #fff; padding: 15px 20px; margin: 12px 0; border-radius: 6px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);}
+    .solution { margin-top: 8px; padding: 10px; background: #eaf2f8; border-left: 4px solid #2980b9; display: none; }
+    button { margin: 10px 5px; padding: 8px 16px; background-color: #2980b9; color: white; border: none; border-radius: 4px; cursor: pointer; }
+    button:hover { background-color: #1f618d; }
+    .nav-buttons { text-align: center; margin-top: 20px; }
+    a { color: #e74c3c; text-decoration: none; font-weight: bold; }
+</style>
+</head>
+<body>
+
+<h1>Average Speed (Unequal Time) - TCS NQT Practice</h1>
+
+<!-- Q1 -->
+<div class="question">
+<b>Q1:</b> A car travels 60 km at 30 km/h and 90 km at 60 km/h. Find average speed.  
+<button onclick="toggleSolution(0)">Show Solution</button>
+<div class="solution">
+Total Distance = \(60 + 90 = 150\) km <br>
+Time1 = \(60/30 = 2\) h, Time2 = \(90/60 = 1.5\) h <br>
+Total Time = \(2 + 1.5 = 3.5\) h <br>
+Average Speed = \(150 / 3.5 \approx 42.86\) km/h <br>
+<b>Answer: 42.86 km/h</b>
+</div>
+</div>
+
+<!-- Q2 -->
+<div class="question">
+<b>Q2:</b> A train covers 100 km at 50 km/h and 150 km at 75 km/h. Find average speed.  
+<button onclick="toggleSolution(1)">Show Solution</button>
+<div class="solution">
+Total Distance = \(100 + 150 = 250\) km <br>
+Time1 = \(100/50 = 2\) h, Time2 = \(150/75 = 2\) h <br>
+Total Time = \(2 + 2 = 4\) h <br>
+Average Speed = \(250/4 = 62.5\) km/h <br>
+<b>Answer: 62.5 km/h</b>
+</div>
+</div>
+
+<!-- Q3 -->
+<div class="question">
+<b>Q3:</b> A cyclist rides 30 km at 10 km/h and 45 km at 15 km/h. Find average speed.  
+<button onclick="toggleSolution(2)">Show Solution</button>
+<div class="solution">
+Total Distance = \(30 + 45 = 75\) km <br>
+Time1 = \(30/10 = 3\) h, Time2 = \(45/15 = 3\) h <br>
+Total Time = \(3 + 3 = 6\) h <br>
+Average Speed = \(75/6 = 12.5\) km/h <br>
+<b>Answer: 12.5 km/h</b>
+</div>
+</div>
+
+<!-- Q4 -->
+<div class="question">
+<b>Q4:</b> A vehicle travels 50 km at 25 km/h and 100 km at 50 km/h. Find average speed.  
+<button onclick="toggleSolution(3)">Show Solution</button>
+<div class="solution">
+Total Distance = \(50 + 100 = 150\) km <br>
+Time1 = \(50/25 = 2\) h, Time2 = \(100/50 = 2\) h <br>
+Total Time = \(2 + 2 = 4\) h <br>
+Average Speed = \(150/4 = 37.5\) km/h <br>
+<b>Answer: 37.5 km/h</b>
+</div>
+</div>
+
+<!-- Q5 -->
+<div class="question">
+<b>Q5:</b> A train moves 120 km at 40 km/h and 180 km at 60 km/h. Find average speed.  
+<button onclick="toggleSolution(4)">Show Solution</button>
+<div class="solution">
+Total Distance = \(120 + 180 = 300\) km <br>
+Time1 = \(120/40 = 3\) h, Time2 = \(180/60 = 3\) h <br>
+Total Time = \(3 + 3 = 6\) h <br>
+Average Speed = \(300/6 = 50\) km/h <br>
+<b>Answer: 50 km/h</b>
+</div>
+</div>
+
+<!-- Q6 -->
+<div class="question">
+<b>Q6:</b> A boat goes 40 km downstream at 20 km/h and 60 km upstream at 15 km/h. Find average speed.  
+<button onclick="toggleSolution(5)">Show Solution</button>
+<div class="solution">
+Total Distance = \(40 + 60 = 100\) km <br>
+Time1 = \(40/20 = 2\) h, Time2 = \(60/15 = 4\) h <br>
+Total Time = \(2 + 4 = 6\) h <br>
+Average Speed = \(100/6 \approx 16.67\) km/h <br>
+<b>Answer: 16.67 km/h</b>
+</div>
+</div>
+
+<!-- Q7 -->
+<div class="question">
+<b>Q7:</b> A car drives 80 km at 40 km/h and 120 km at 60 km/h. Find average speed.  
+<button onclick="toggleSolution(6)">Show Solution</button>
+<div class="solution">
+Total Distance = \(80 + 120 = 200\) km <br>
+Time1 = \(80/40 = 2\) h, Time2 = \(120/60 = 2\) h <br>
+Total Time = \(2 + 2 = 4\) h <br>
+Average Speed = \(200/4 = 50\) km/h <br>
+<b>Answer: 50 km/h</b>
+</div>
+</div>
+
+<!-- Q8 -->
+<div class="question">
+<b>Q8:</b> A motorbike rides 60 km at 20 km/h and 90 km at 30 km/h. Find average speed.  
+<button onclick="toggleSolution(7)">Show Solution</button>
+<div class="solution">
+Total Distance = \(60 + 90 = 150\) km <br>
+Time1 = \(60/20 = 3\) h, Time2 = \(90/30 = 3\) h <br>
+Total Time = \(3 + 3 = 6\) h <br>
+Average Speed = \(150/6 = 25\) km/h <br>
+<b>Answer: 25 km/h</b>
+</div>
+</div>
+
+<!-- Q9 -->
+<div class="question">
+<b>Q9:</b> A vehicle covers 150 km at 50 km/h and 50 km at 25 km/h. Find average speed.  
+<button onclick="toggleSolution(8)">Show Solution</button>
+<div class="solution">
+Total Distance = \(150 + 50 = 200\) km <br>
+Time1 = \(150/50 = 3\) h, Time2 = \(50/25 = 2\) h <br>
+Total Time = \(3 + 2 = 5\) h <br>
+Average Speed = \(200/5 = 40\) km/h <br>
+<b>Answer: 40 km/h</b>
+</div>
+</div>
+
+<!-- Q10 -->
+<div class="question">
+<b>Q10:</b> A car travels 100 km at 50 km/h and 150 km at 75 km/h. Find average speed.  
+<button onclick="toggleSolution(9)">Show Solution</button>
+<div class="solution">
+Total Distance = \(100 + 150 = 250\) km <br>
+Time1 = \(100/50 = 2\) h, Time2 = \(150/75 = 2\) h <br>
+Total Time = \(2 + 2 = 4\) h <br>
+Average Speed = \(250/4 = 62.5\) km/h <br>
+<b>Answer: 62.5 km/h</b>
+</div>
+</div>
+
+<div class="nav-buttons">
+<a href="index.html"><button>Back to Average Topics</button></a>
+<a href="cricket-average.html"><button>Next Topic</button></a>
+</div>
+
+<script>
+const solutions = document.querySelectorAll('.solution');
+function toggleSolution(index) {
+    const sol = solutions[index];
+    sol.style.display = (sol.style.display === 'block') ? 'none' : 'block';
+    if (window.MathJax) MathJax.typesetPromise([sol]);
+}
+</script>
+
+</body>
+</html>

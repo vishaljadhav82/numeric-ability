@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Production Average Problems - TCS NQT</title>
+
+    <!-- MathJax CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+        .question {
+            background: #fff;
+            padding: 15px 20px;
+            margin: 12px 0;
+            border-radius: 6px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .solution {
+            margin-top: 8px;
+            padding: 10px;
+            background: #eaf2f8;
+            border-left: 4px solid #2980b9;
+            display: none;
+        }
+        button {
+            margin: 10px 5px 10px 0;
+            padding: 8px 16px;
+            background-color: #2980b9;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #1f618d;
+        }
+        .nav-buttons {
+            text-align: center;
+            margin-top: 20px;
+        }
+        a {
+            color: #e74c3c;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Production Average Problems - TCS NQT Practice</h1>
+
+<!-- Q1 -->
+<div class="question">
+    <b>Q1:</b> Average production of 5 machines is 120 units/day. One machine produces 150 units/day. Find the average production of remaining 4 machines.  
+    <button onclick="toggleSolution(0)">Show Solution</button>
+    <div class="solution">
+        Total production = 5 × 120 = 600 units <br>
+        Remaining total = 600 - 150 = 450 units <br>
+        Average = 450 / 4 = 112.5 units/day <br>
+        <b>Answer: 112.5 units/day</b>
+    </div>
+</div>
+
+<!-- Q2 -->
+<div class="question">
+    <b>Q2:</b> Average output of 10 workers is 80 units/day. A new worker joins producing 100 units/day. Find new average.  
+    <button onclick="toggleSolution(1)">Show Solution</button>
+    <div class="solution">
+        Total = 10 × 80 = 800 units <br>
+        New total = 800 + 100 = 900 units <br>
+        New average = 900 / 11 ≈ 81.82 units/day <br>
+        <b>Answer: 81.82 units/day</b>
+    </div>
+</div>
+
+<!-- Q3 -->
+<div class="question">
+    <b>Q3:</b> Average daily production of a factory for 7 days is 200 units. On the 8th day, production is 250 units. Find the new average.  
+    <button onclick="toggleSolution(2)">Show Solution</button>
+    <div class="solution">
+        Total = 7 × 200 = 1400 units <br>
+        New total = 1400 + 250 = 1650 units <br>
+        New average = 1650 / 8 ≈ 206.25 units/day <br>
+        <b>Answer: 206.25 units/day</b>
+    </div>
+</div>
+
+<!-- Q4 -->
+<div class="question">
+    <b>Q4:</b> Average production of 6 machines is 180 units/day. One machine fails and produces 150 units. Find new average production.  
+    <button onclick="toggleSolution(3)">Show Solution</button>
+    <div class="solution">
+        Total = 6 × 180 = 1080 units <br>
+        Total excluding failing machine = 1080 - 180 + 150 = 1050 units <br>
+        New average = 1050 / 6 = 175 units/day <br>
+        <b>Answer: 175 units/day</b>
+    </div>
+</div>
+
+<!-- Q5 -->
+<div class="question">
+    <b>Q5:</b> Average production of 12 workers is 150 units/day. One worker leaves producing 180 units/day. Find new average.  
+    <button onclick="toggleSolution(4)">Show Solution</button>
+    <div class="solution">
+        Total = 12 × 150 = 1800 units <br>
+        Remaining total = 1800 - 180 = 1620 units <br>
+        New average = 1620 / 11 ≈ 147.27 units/day <br>
+        <b>Answer: 147.27 units/day</b>
+    </div>
+</div>
+
+<!-- Q6 -->
+<div class="question">
+    <b>Q6:</b> Average production of 8 machines is 200 units/day. Two new machines produce 220 and 240 units/day. Find new average.  
+    <button onclick="toggleSolution(5)">Show Solution</button>
+    <div class="solution">
+        Total = 8 × 200 = 1600 units <br>
+        New total = 1600 + 220 + 240 = 2060 units <br>
+        New average = 2060 / 10 = 206 units/day <br>
+        <b>Answer: 206 units/day</b>
+    </div>
+</div>
+
+<!-- Q7 -->
+<div class="question">
+    <b>Q7:</b> Average output of 5 workers is 90 units/day. One worker producing 110 units leaves. Find new average.  
+    <button onclick="toggleSolution(6)">Show Solution</button>
+    <div class="solution">
+        Total = 5 × 90 = 450 units <br>
+        Remaining total = 450 - 110 = 340 units <br>
+        New average = 340 / 4 = 85 units/day <br>
+        <b>Answer: 85 units/day</b>
+    </div>
+</div>
+
+<!-- Q8 -->
+<div class="question">
+    <b>Q8:</b> Average production of 15 machines is 300 units/day. One machine increases production by 50 units. Find new average.  
+    <button onclick="toggleSolution(7)">Show Solution</button>
+    <div class="solution">
+        Total = 15 × 300 = 4500 units <br>
+        New total = 4500 + 50 = 4550 units <br>
+        New average = 4550 / 15 ≈ 303.33 units/day <br>
+        <b>Answer: 303.33 units/day</b>
+    </div>
+</div>
+
+<!-- Q9 -->
+<div class="question">
+    <b>Q9:</b> Average production of 6 days is 250 units/day. On the 7th day, production is 300 units. Find new average.  
+    <button onclick="toggleSolution(8)">Show Solution</button>
+    <div class="solution">
+        Total = 6 × 250 = 1500 units <br>
+        New total = 1500 + 300 = 1800 units <br>
+        New average = 1800 / 7 ≈ 257.14 units/day <br>
+        <b>Answer: 257.14 units/day</b>
+    </div>
+</div>
+
+<!-- Q10 -->
+<div class="question">
+    <b>Q10:</b> Average daily production of 10 workers is 180 units. Two workers producing 200 and 220 units join. Find new average.  
+    <button onclick="toggleSolution(9)">Show Solution</button>
+    <div class="solution">
+        Total = 10 × 180 = 1800 units <br>
+        New total = 1800 + 200 + 220 = 2220 units <br>
+        New average = 2220 / 12 = 185 units/day <br>
+        <b>Answer: 185 units/day</b>
+    </div>
+</div>
+
+<div class="nav-buttons">
+    <a href="index.html"><button>Back to Average Topics</button></a>
+    <a href="profit-average.html"><button>Next Topic</button></a>
+</div>
+
+<script>
+    const solutions = document.querySelectorAll('.solution');
+    function toggleSolution(index) {
+        const sol = solutions[index];
+        sol.style.display = (sol.style.display === 'block') ? 'none' : 'block';
+        if (window.MathJax) MathJax.typesetPromise([sol]);
+    }
+</script>
+
+</body>
+</html>

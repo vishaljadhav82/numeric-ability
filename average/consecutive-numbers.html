@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consecutive Numbers Average - TCS NQT Practice</title>
+
+    <!-- MathJax CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+        .question {
+            background: #fff;
+            padding: 15px 20px;
+            margin: 12px 0;
+            border-radius: 6px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .solution {
+            margin-top: 8px;
+            padding: 10px;
+            background: #eaf2f8;
+            border-left: 4px solid #2980b9;
+            display: none;
+        }
+        button {
+            margin: 10px 5px 10px 0;
+            padding: 8px 16px;
+            background-color: #2980b9;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #1f618d;
+        }
+        .nav-buttons {
+            text-align: center;
+            margin-top: 20px;
+        }
+        a {
+            color: #e74c3c;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Consecutive Numbers Average - TCS NQT Practice</h1>
+
+<!-- Q1 -->
+<div class="question">
+    <b>Q1:</b> Find the average of first 10 natural numbers.  
+    <button onclick="toggleSolution(0)">Show Solution</button>
+    <div class="solution">
+        First 10 numbers: 1,2,…,10 <br>
+        Average = (1+10)/2 = 11/2 = 5.5 <br>
+        <b>Answer: 5.5</b>
+    </div>
+</div>
+
+<!-- Q2 -->
+<div class="question">
+    <b>Q2:</b> The average of 5 consecutive numbers is 20. Find the numbers.  
+    <button onclick="toggleSolution(1)">Show Solution</button>
+    <div class="solution">
+        Let numbers = \(x-2, x-1, x, x+1, x+2\) <br>
+        Average = x = 20 → middle number = 20 <br>
+        Numbers = 18,19,20,21,22 <br>
+        <b>Answer: 18,19,20,21,22</b>
+    </div>
+</div>
+
+<!-- Q3 -->
+<div class="question">
+    <b>Q3:</b> Find the average of first 15 odd numbers.  
+    <button onclick="toggleSolution(2)">Show Solution</button>
+    <div class="solution">
+        First 15 odd numbers: 1,3,5,…,29 <br>
+        Average = (1+29)/2 = 30/2 = 15 <br>
+        <b>Answer: 15</b>
+    </div>
+</div>
+
+<!-- Q4 -->
+<div class="question">
+    <b>Q4:</b> Five consecutive even numbers have an average of 26. Find the numbers.  
+    <button onclick="toggleSolution(3)">Show Solution</button>
+    <div class="solution">
+        Let numbers = x-4, x-2, x, x+2, x+4 <br>
+        Average = x = 26 → middle number = 26 <br>
+        Numbers = 22,24,26,28,30 <br>
+        <b>Answer: 22,24,26,28,30</b>
+    </div>
+</div>
+
+<!-- Q5 -->
+<div class="question">
+    <b>Q5:</b> The sum of 7 consecutive numbers is 105. Find the numbers.  
+    <button onclick="toggleSolution(4)">Show Solution</button>
+    <div class="solution">
+        Average = 105/7 = 15 → middle number = 15 <br>
+        Numbers = 12,13,14,15,16,17,18 <br>
+        <b>Answer: 12,13,14,15,16,17,18</b>
+    </div>
+</div>
+
+<!-- Q6 -->
+<div class="question">
+    <b>Q6:</b> Average of 20 consecutive numbers is 50. Find the first and last numbers.  
+    <button onclick="toggleSolution(5)">Show Solution</button>
+    <div class="solution">
+        Let middle two numbers = 50,51 (even count → two middle numbers) <br>
+        Numbers = 41,42,…,60 <br>
+        <b>Answer: First = 41, Last = 60</b>
+    </div>
+</div>
+
+<!-- Q7 -->
+<div class="question">
+    <b>Q7:</b> The sum of 9 consecutive odd numbers is 81. Find the numbers.  
+    <button onclick="toggleSolution(6)">Show Solution</button>
+    <div class="solution">
+        Average = 81/9 = 9 → middle number = 9 <br>
+        Numbers = 1,3,5,7,9,11,13,15,17 <br>
+        <b>Answer: 1,3,5,7,9,11,13,15,17</b>
+    </div>
+</div>
+
+<!-- Q8 -->
+<div class="question">
+    <b>Q8:</b> Average of 6 consecutive numbers is 34. Find the numbers.  
+    <button onclick="toggleSolution(7)">Show Solution</button>
+    <div class="solution">
+        Let middle numbers = 33,34 (even count) <br>
+        Numbers = 31,32,33,34,35,36 <br>
+        <b>Answer: 31,32,33,34,35,36</b>
+    </div>
+</div>
+
+<!-- Q9 -->
+<div class="question">
+    <b>Q9:</b> The average of 11 consecutive numbers is 27. Find the first and last numbers.  
+    <button onclick="toggleSolution(8)">Show Solution</button>
+    <div class="solution">
+        Middle number = 27 → first = 27-5 = 22, last = 27+5 = 32 <br>
+        <b>Answer: First = 22, Last = 32</b>
+    </div>
+</div>
+
+<!-- Q10 -->
+<div class="question">
+    <b>Q10:</b> Five consecutive integers have a sum of 100. Find the numbers.  
+    <button onclick="toggleSolution(9)">Show Solution</button>
+    <div class="solution">
+        Average = 100/5 = 20 → middle number = 20 <br>
+        Numbers = 18,19,20,21,22 <br>
+        <b>Answer: 18,19,20,21,22</b>
+    </div>
+</div>
+
+<div class="nav-buttons">
+    <a href="index.html"><button>Back to Average Topics</button></a>
+    <a href="age-problems.html"><button>Next Topic</button></a>
+</div>
+
+<script>
+    const solutions = document.querySelectorAll('.solution');
+    function toggleSolution(index) {
+        const sol = solutions[index];
+        sol.style.display = (sol.style.display === 'block') ? 'none' : 'block';
+        if (window.MathJax) MathJax.typesetPromise([sol]);
+    }
+</script>
+
+</body>
+</html>

@@ -4,8 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Basic Average - TCS NQT Numeric Ability</title>
-    <!-- MathJax CDN for rendering math -->
-    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
+    <!-- KaTeX CSS and JS CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css" integrity="sha384-vZTGzfnYDKy2dHTZ2M0+7mMwEKGV6+gqf1vXwH+0nsfG9R2vC5ZJt+ZCz0hH0x5S" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js" integrity="sha384-q6EblK1T62L4I3eqDE1xZZa3D74uGJgq+efAjaR6p1Qz4tQf+2cN5XYbM8jBqH3f" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js" integrity="sha384-kWPLU7A4dNExfwSEpPjIeqYw/knvRi3Pt6u31aHB6iM5+vTJ0bN7c6Wm0g5Fhp3S" crossorigin="anonymous"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+          delimiters: [
+            {left: "\\(", right: "\\)", display: false},
+            {left: "\\[", right: "\\]", display: true}
+          ]
+        });
+      });
+    </script>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -62,8 +74,8 @@
         <b>Q1:</b> Find the average of 10, 20, 30, 40, 50.  
         <button onclick="toggleSolution(0)">Show Solution</button>
         <div class="solution">
-            Step 1: Sum the numbers: \\(10+20+30+40+50 = 150\\) <br>
-            Step 2: Divide by number of terms: \\(150/5 = 30\\) <br>
+            Step 1: Sum the numbers: \(10+20+30+40+50 = 150\) <br>
+            Step 2: Divide by number of terms: \(150/5 = 30\) <br>
             <b>Answer: 30</b>
         </div>
     </div>
@@ -72,9 +84,9 @@
         <b>Q2:</b> Average of 15, 25, 35.  
         <button onclick="toggleSolution(1)">Show Solution</button>
         <div class="solution">
-            Sum = \\(15+25+35=75\\) <br>
+            Sum = \(15+25+35=75\) <br>
             Number of terms = 3 <br>
-            Average = \\(75/3 = 25\\) <br>
+            Average = \(75/3 = 25\) <br>
             <b>Answer: 25</b>
         </div>
     </div>
@@ -83,9 +95,9 @@
         <b>Q3:</b> Average of 8, 12, 20, 10.  
         <button onclick="toggleSolution(2)">Show Solution</button>
         <div class="solution">
-            Sum = \\(8+12+20+10=50\\) <br>
+            Sum = \(8+12+20+10=50\) <br>
             Number of terms = 4 <br>
-            Average = \\(50/4 = 12.5\\) <br>
+            Average = \(50/4 = 12.5\) <br>
             <b>Answer: 12.5</b>
         </div>
     </div>
@@ -94,9 +106,9 @@
         <b>Q4:</b> Average of 5, 15, 25, 35, 45.  
         <button onclick="toggleSolution(3)">Show Solution</button>
         <div class="solution">
-            Sum = \\(5+15+25+35+45=125\\) <br>
+            Sum = \(5+15+25+35+45=125\) <br>
             Number of terms = 5 <br>
-            Average = \\(125/5 = 25\\) <br>
+            Average = \(125/5 = 25\) <br>
             <b>Answer: 25</b>
         </div>
     </div>
@@ -105,9 +117,9 @@
         <b>Q5:</b> Average of 100, 200, 300.  
         <button onclick="toggleSolution(4)">Show Solution</button>
         <div class="solution">
-            Sum = \\(100+200+300=600\\) <br>
+            Sum = \(100+200+300=600\) <br>
             Number of terms = 3 <br>
-            Average = \\(600/3 = 200\\) <br>
+            Average = \(600/3 = 200\) <br>
             <b>Answer: 200</b>
         </div>
     </div>
@@ -116,9 +128,9 @@
         <b>Q6:</b> Average of 7, 14, 21, 28.  
         <button onclick="toggleSolution(5)">Show Solution</button>
         <div class="solution">
-            Sum = \\(7+14+21+28=70\\) <br>
+            Sum = \(7+14+21+28=70\) <br>
             Number of terms = 4 <br>
-            Average = \\(70/4 = 17.5\\) <br>
+            Average = \(70/4 = 17.5\) <br>
             <b>Answer: 17.5</b>
         </div>
     </div>
@@ -127,9 +139,9 @@
         <b>Q7:</b> Average of 50, 60, 70, 80, 90.  
         <button onclick="toggleSolution(6)">Show Solution</button>
         <div class="solution">
-            Sum = \\(50+60+70+80+90=350\\) <br>
+            Sum = \(50+60+70+80+90=350\) <br>
             Number of terms = 5 <br>
-            Average = \\(350/5 = 70\\) <br>
+            Average = \(350/5 = 70\) <br>
             <b>Answer: 70</b>
         </div>
     </div>
@@ -138,9 +150,9 @@
         <b>Q8:</b> Average of 1, 2, 3, 4, 5, 6.  
         <button onclick="toggleSolution(7)">Show Solution</button>
         <div class="solution">
-            Sum = \\(1+2+3+4+5+6=21\\) <br>
+            Sum = \(1+2+3+4+5+6=21\) <br>
             Number of terms = 6 <br>
-            Average = \\(21/6 = 3.5\\) <br>
+            Average = \(21/6 = 3.5\) <br>
             <b>Answer: 3.5</b>
         </div>
     </div>
@@ -149,9 +161,9 @@
         <b>Q9:</b> Average of 11, 13, 17.  
         <button onclick="toggleSolution(8)">Show Solution</button>
         <div class="solution">
-            Sum = \\(11+13+17=41\\) <br>
+            Sum = \(11+13+17=41\) <br>
             Number of terms = 3 <br>
-            Average = \\(41/3 \\approx 13.67\\) <br>
+            Average = \(41/3 \approx 13.67\) <br>
             <b>Answer: 13.67</b>
         </div>
     </div>
@@ -160,9 +172,9 @@
         <b>Q10:</b> Average of 9, 18, 27, 36, 45.  
         <button onclick="toggleSolution(9)">Show Solution</button>
         <div class="solution">
-            Sum = \\(9+18+27+36+45=135\\) <br>
+            Sum = \(9+18+27+36+45=135\) <br>
             Number of terms = 5 <br>
-            Average = \\(135/5 = 27\\) <br>
+            Average = \(135/5 = 27\) <br>
             <b>Answer: 27</b>
         </div>
     </div>
@@ -176,11 +188,7 @@
         const solutions = document.querySelectorAll('.solution');
         function toggleSolution(index) {
             const sol = solutions[index];
-            if (sol.style.display === 'none' || sol.style.display === '') {
-                sol.style.display = 'block';
-            } else {
-                sol.style.display = 'none';
-            }
+            sol.style.display = (sol.style.display === 'block') ? 'none' : 'block';
         }
     </script>
 </body>

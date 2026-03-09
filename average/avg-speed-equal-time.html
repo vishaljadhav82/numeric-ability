@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Average Speed (Equal Time) - TCS NQT</title>
+
+    <!-- MathJax CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+        .question {
+            background: #fff;
+            padding: 15px 20px;
+            margin: 12px 0;
+            border-radius: 6px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .solution {
+            margin-top: 8px;
+            padding: 10px;
+            background: #eaf2f8;
+            border-left: 4px solid #2980b9;
+            display: none;
+        }
+        button {
+            margin: 10px 5px 10px 0;
+            padding: 8px 16px;
+            background-color: #2980b9;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #1f618d;
+        }
+        .nav-buttons {
+            text-align: center;
+            margin-top: 20px;
+        }
+        a {
+            color: #e74c3c;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Average Speed (Equal Time) - TCS NQT Practice</h1>
+
+<!-- Q1 -->
+<div class="question">
+    <b>Q1:</b> A car travels for 2 hours at 60 km/h and 2 hours at 90 km/h. Find average speed.  
+    <button onclick="toggleSolution(0)">Show Solution</button>
+    <div class="solution">
+        Average speed = \( \frac{60 + 90}{2} = 75 \text{ km/h} \) <br>
+        <b>Answer: 75 km/h</b>
+    </div>
+</div>
+
+<!-- Q2 -->
+<div class="question">
+    <b>Q2:</b> A train runs 3 hours at 40 km/h and 3 hours at 60 km/h. Find average speed.  
+    <button onclick="toggleSolution(1)">Show Solution</button>
+    <div class="solution">
+        Average speed = \( \frac{40 + 60}{2} = 50 \text{ km/h} \) <br>
+        <b>Answer: 50 km/h</b>
+    </div>
+</div>
+
+<!-- Q3 -->
+<div class="question">
+    <b>Q3:</b> A cyclist rides 1 hour at 15 km/h, 1 hour at 20 km/h, and 1 hour at 25 km/h. Find average speed.  
+    <button onclick="toggleSolution(2)">Show Solution</button>
+    <div class="solution">
+        Average speed = \( \frac{15 + 20 + 25}{3} = 20 \text{ km/h} \) <br>
+        <b>Answer: 20 km/h</b>
+    </div>
+</div>
+
+<!-- Q4 -->
+<div class="question">
+    <b>Q4:</b> A car travels 2 hours at 50 km/h and 2 hours at 70 km/h. Find average speed.  
+    <button onclick="toggleSolution(3)">Show Solution</button>
+    <div class="solution">
+        Average speed = \( \frac{50 + 70}{2} = 60 \text{ km/h} \) <br>
+        <b>Answer: 60 km/h</b>
+    </div>
+</div>
+
+<!-- Q5 -->
+<div class="question">
+    <b>Q5:</b> A train runs equal time at 80 km/h and 120 km/h. Find average speed.  
+    <button onclick="toggleSolution(4)">Show Solution</button>
+    <div class="solution">
+        Average speed = \( \frac{80 + 120}{2} = 100 \text{ km/h} \) <br>
+        <b>Answer: 100 km/h</b>
+    </div>
+</div>
+
+<!-- Q6 -->
+<div class="question">
+    <b>Q6:</b> A boat goes 2 hours downstream at 30 km/h and 2 hours upstream at 20 km/h. Find average speed.  
+    <button onclick="toggleSolution(5)">Show Solution</button>
+    <div class="solution">
+        Average speed = \( \frac{30 + 20}{2} = 25 \text{ km/h} \) <br>
+        <b>Answer: 25 km/h</b>
+    </div>
+</div>
+
+<!-- Q7 -->
+<div class="question">
+    <b>Q7:</b> A car drives 1 hour at 45 km/h, 1 hour at 60 km/h, and 1 hour at 75 km/h. Find average speed.  
+    <button onclick="toggleSolution(6)">Show Solution</button>
+    <div class="solution">
+        Average speed = \( \frac{45 + 60 + 75}{3} = 60 \text{ km/h} \) <br>
+        <b>Answer: 60 km/h</b>
+    </div>
+</div>
+
+<!-- Q8 -->
+<div class="question">
+    <b>Q8:</b> A motorbike runs 2 hours at 36 km/h and 2 hours at 54 km/h. Find average speed.  
+    <button onclick="toggleSolution(7)">Show Solution</button>
+    <div class="solution">
+        Average speed = \( \frac{36 + 54}{2} = 45 \text{ km/h} \) <br>
+        <b>Answer: 45 km/h</b>
+    </div>
+</div>
+
+<!-- Q9 -->
+<div class="question">
+    <b>Q9:</b> A vehicle moves 3 hours at 50 km/h and 3 hours at 70 km/h. Find average speed.  
+    <button onclick="toggleSolution(8)">Show Solution</button>
+    <div class="solution">
+        Average speed = \( \frac{50 + 70}{2} = 60 \text{ km/h} \) <br>
+        <b>Answer: 60 km/h</b>
+    </div>
+</div>
+
+<!-- Q10 -->
+<div class="question">
+    <b>Q10:</b> A car travels equal time at 60 km/h, 80 km/h, and 100 km/h. Find average speed.  
+    <button onclick="toggleSolution(9)">Show Solution</button>
+    <div class="solution">
+        Average speed = \( \frac{60 + 80 + 100}{3} = 80 \text{ km/h} \) <br>
+        <b>Answer: 80 km/h</b>
+    </div>
+</div>
+
+<div class="nav-buttons">
+    <a href="index.html"><button>Back to Average Topics</button></a>
+    <a href="avg-speed-unequal-time.html"><button>Next Topic</button></a>
+</div>
+
+<script>
+    const solutions = document.querySelectorAll('.solution');
+    function toggleSolution(index) {
+        const sol = solutions[index];
+        sol.style.display = (sol.style.display === 'block') ? 'none' : 'block';
+        if (window.MathJax) MathJax.typesetPromise([sol]);
+    }
+</script>
+
+</body>
+</html>

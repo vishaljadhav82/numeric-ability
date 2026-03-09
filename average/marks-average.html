@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marks Average Problems - TCS NQT Practice</title>
+
+    <!-- MathJax CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+        .question {
+            background: #fff;
+            padding: 15px 20px;
+            margin: 12px 0;
+            border-radius: 6px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .solution {
+            margin-top: 8px;
+            padding: 10px;
+            background: #eaf2f8;
+            border-left: 4px solid #2980b9;
+            display: none;
+        }
+        button {
+            margin: 10px 5px 10px 0;
+            padding: 8px 16px;
+            background-color: #2980b9;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #1f618d;
+        }
+        .nav-buttons {
+            text-align: center;
+            margin-top: 20px;
+        }
+        a {
+            color: #e74c3c;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Marks Average Problems - TCS NQT Practice</h1>
+
+<!-- Q1 -->
+<div class="question">
+    <b>Q1:</b> Average marks of 10 students is 72. One student scored 90. Find the average marks of the remaining 9 students.  
+    <button onclick="toggleSolution(0)">Show Solution</button>
+    <div class="solution">
+        Total marks = 10 × 72 = 720 <br>
+        Total of remaining 9 = 720 - 90 = 630 <br>
+        Average of remaining 9 = 630 / 9 = 70 <br>
+        <b>Answer: 70 marks</b>
+    </div>
+</div>
+
+<!-- Q2 -->
+<div class="question">
+    <b>Q2:</b> Average marks of a class of 15 students is 60. A new student joins with 75 marks. Find the new average.  
+    <button onclick="toggleSolution(1)">Show Solution</button>
+    <div class="solution">
+        Total marks = 15 × 60 = 900 <br>
+        New total = 900 + 75 = 975 <br>
+        New average = 975 / 16 ≈ 60.94 <br>
+        <b>Answer: 60.94 marks</b>
+    </div>
+</div>
+
+<!-- Q3 -->
+<div class="question">
+    <b>Q3:</b> Average marks of 5 subjects is 80. If marks in 6th subject is 90, find the new average.  
+    <button onclick="toggleSolution(2)">Show Solution</button>
+    <div class="solution">
+        Total marks for 5 subjects = 5 × 80 = 400 <br>
+        Total including 6th = 400 + 90 = 490 <br>
+        New average = 490 / 6 ≈ 81.67 <br>
+        <b>Answer: 81.67 marks</b>
+    </div>
+</div>
+
+<!-- Q4 -->
+<div class="question">
+    <b>Q4:</b> Average marks of a class of 20 students is 55. Two students scored 65 and 75. Find the average marks of the remaining 18 students.  
+    <button onclick="toggleSolution(3)">Show Solution</button>
+    <div class="solution">
+        Total marks = 20 × 55 = 1100 <br>
+        Total of remaining 18 = 1100 - (65 + 75) = 960 <br>
+        Average = 960 / 18 ≈ 53.33 <br>
+        <b>Answer: 53.33 marks</b>
+    </div>
+</div>
+
+<!-- Q5 -->
+<div class="question">
+    <b>Q5:</b> Average marks of 8 students is 70. One student scored 50. Find the new average of remaining students.  
+    <button onclick="toggleSolution(4)">Show Solution</button>
+    <div class="solution">
+        Total marks = 8 × 70 = 560 <br>
+        Remaining total = 560 - 50 = 510 <br>
+        New average = 510 / 7 ≈ 72.86 <br>
+        <b>Answer: 72.86 marks</b>
+    </div>
+</div>
+
+<!-- Q6 -->
+<div class="question">
+    <b>Q6:</b> Average marks of a class of 10 students is 68. One student scored 80. Find the average of the remaining 9.  
+    <button onclick="toggleSolution(5)">Show Solution</button>
+    <div class="solution">
+        Total marks = 10 × 68 = 680 <br>
+        Remaining total = 680 - 80 = 600 <br>
+        Average = 600 / 9 ≈ 66.67 <br>
+        <b>Answer: 66.67 marks</b>
+    </div>
+</div>
+
+<!-- Q7 -->
+<div class="question">
+    <b>Q7:</b> Average marks of 12 students is 75. One student leaves, average becomes 74. Find the marks of the student who left.  
+    <button onclick="toggleSolution(6)">Show Solution</button>
+    <div class="solution">
+        Total marks = 12 × 75 = 900 <br>
+        New total = 11 × 74 = 814 <br>
+        Marks of student who left = 900 - 814 = 86 <br>
+        <b>Answer: 86 marks</b>
+    </div>
+</div>
+
+<!-- Q8 -->
+<div class="question">
+    <b>Q8:</b> Average marks of 5 students is 60. If a new student scores 80, find the new average.  
+    <button onclick="toggleSolution(7)">Show Solution</button>
+    <div class="solution">
+        Total marks = 5 × 60 = 300 <br>
+        New total = 300 + 80 = 380 <br>
+        New average = 380 / 6 ≈ 63.33 <br>
+        <b>Answer: 63.33 marks</b>
+    </div>
+</div>
+
+<!-- Q9 -->
+<div class="question">
+    <b>Q9:</b> Average marks of 15 students is 72. One student scored 60 and leaves. Find the new average.  
+    <button onclick="toggleSolution(8)">Show Solution</button>
+    <div class="solution">
+        Total = 15 × 72 = 1080 <br>
+        Remaining total = 1080 - 60 = 1020 <br>
+        New average = 1020 / 14 ≈ 72.86 <br>
+        <b>Answer: 72.86 marks</b>
+    </div>
+</div>
+
+<!-- Q10 -->
+<div class="question">
+    <b>Q10:</b> Average marks of a class of 20 students is 65. A student scoring 85 joins. Find the new average.  
+    <button onclick="toggleSolution(9)">Show Solution</button>
+    <div class="solution">
+        Total = 20 × 65 = 1300 <br>
+        New total = 1300 + 85 = 1385 <br>
+        New average = 1385 / 21 ≈ 65.95 <br>
+        <b>Answer: 65.95 marks</b>
+    </div>
+</div>
+
+<div class="nav-buttons">
+    <a href="index.html"><button>Back to Average Topics</button></a>
+    <a href="temperature-average.html"><button>Next Topic</button></a>
+</div>
+
+<script>
+    const solutions = document.querySelectorAll('.solution');
+    function toggleSolution(index) {
+        const sol = solutions[index];
+        sol.style.display = (sol.style.display === 'block') ? 'none' : 'block';
+        if (window.MathJax) MathJax.typesetPromise([sol]);
+    }
+</script>
+
+</body>
+</html>

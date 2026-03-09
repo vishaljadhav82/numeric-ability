@@ -4,20 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Basic Average - TCS NQT Numeric Ability</title>
-    <!-- KaTeX CSS and JS CDN -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css" integrity="sha384-vZTGzfnYDKy2dHTZ2M0+7mMwEKGV6+gqf1vXwH+0nsfG9R2vC5ZJt+ZCz0hH0x5S" crossorigin="anonymous">
-    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js" integrity="sha384-q6EblK1T62L4I3eqDE1xZZa3D74uGJgq+efAjaR6p1Qz4tQf+2cN5XYbM8jBqH3f" crossorigin="anonymous"></script>
-    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js" integrity="sha384-kWPLU7A4dNExfwSEpPjIeqYw/knvRi3Pt6u31aHB6iM5+vTJ0bN7c6Wm0g5Fhp3S" crossorigin="anonymous"></script>
-    <script>
-      document.addEventListener("DOMContentLoaded", function() {
-        renderMathInElement(document.body, {
-          delimiters: [
-            {left: "\\(", right: "\\)", display: false},
-            {left: "\\[", right: "\\]", display: true}
-          ]
-        });
-      });
-    </script>
+
+    <!-- MathJax CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" id="MathJax-script" async></script>
+
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -188,7 +178,14 @@
         const solutions = document.querySelectorAll('.solution');
         function toggleSolution(index) {
             const sol = solutions[index];
-            sol.style.display = (sol.style.display === 'block') ? 'none' : 'block';
+            if (sol.style.display === 'block') {
+                sol.style.display = 'none';
+            } else {
+                sol.style.display = 'block';
+                if (window.MathJax) {
+                    MathJax.typesetPromise([sol]);
+                }
+            }
         }
     </script>
 </body>

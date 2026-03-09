@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Average Speed (Equal Distance) - TCS NQT</title>
+
+    <!-- MathJax CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+        .question {
+            background: #fff;
+            padding: 15px 20px;
+            margin: 12px 0;
+            border-radius: 6px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .solution {
+            margin-top: 8px;
+            padding: 10px;
+            background: #eaf2f8;
+            border-left: 4px solid #2980b9;
+            display: none;
+        }
+        button {
+            margin: 10px 5px 10px 0;
+            padding: 8px 16px;
+            background-color: #2980b9;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #1f618d;
+        }
+        .nav-buttons {
+            text-align: center;
+            margin-top: 20px;
+        }
+        a {
+            color: #e74c3c;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Average Speed (Equal Distance) - TCS NQT Practice</h1>
+
+<!-- Problems -->
+<div class="question">
+    <b>Q1:</b> A car travels 100 km at 50 km/h and returns the same distance at 70 km/h. Find average speed.  
+    <button onclick="toggleSolution(0)">Show Solution</button>
+    <div class="solution">
+        Average speed = \( \frac{2 \cdot 50 \cdot 70}{50 + 70} = \frac{7000}{120} \approx 58.33 \text{ km/h} \) <br>
+        <b>Answer: 58.33 km/h</b>
+    </div>
+</div>
+
+<div class="question">
+    <b>Q2:</b> A train travels 120 km at 60 km/h and returns the same distance at 80 km/h. Find average speed.  
+    <button onclick="toggleSolution(1)">Show Solution</button>
+    <div class="solution">
+        Average speed = \( \frac{2 \cdot 60 \cdot 80}{60 + 80} = \frac{9600}{140} \approx 68.57 \text{ km/h} \) <br>
+        <b>Answer: 68.57 km/h</b>
+    </div>
+</div>
+
+<div class="question">
+    <b>Q3:</b> A bike goes 30 km at 20 km/h and returns 30 km at 30 km/h. Find average speed.  
+    <button onclick="toggleSolution(2)">Show Solution</button>
+    <div class="solution">
+        Average speed = \( \frac{2 \cdot 20 \cdot 30}{20 + 30} = 24 \text{ km/h} \) <br>
+        <b>Answer: 24 km/h</b>
+    </div>
+</div>
+
+<div class="question">
+    <b>Q4:</b> A car travels 60 km at 40 km/h and returns at 60 km/h. Find average speed.  
+    <button onclick="toggleSolution(3)">Show Solution</button>
+    <div class="solution">
+        Average speed = \( \frac{2 \cdot 40 \cdot 60}{40 + 60} = 48 \text{ km/h} \) <br>
+        <b>Answer: 48 km/h</b>
+    </div>
+</div>
+
+<div class="question">
+    <b>Q5:</b> A boat goes 50 km downstream at 25 km/h and returns upstream at 15 km/h. Find average speed.  
+    <button onclick="toggleSolution(4)">Show Solution</button>
+    <div class="solution">
+        Average speed = \( \frac{2 \cdot 25 \cdot 15}{25 + 15} = 18.75 \text{ km/h} \) <br>
+        <b>Answer: 18.75 km/h</b>
+    </div>
+</div>
+
+<div class="question">
+    <b>Q6:</b> A car travels equal distances at 36 km/h and 54 km/h. Find average speed.  
+    <button onclick="toggleSolution(5)">Show Solution</button>
+    <div class="solution">
+        Average speed = \( \frac{2 \cdot 36 \cdot 54}{36 + 54} = 43.2 \text{ km/h} \) <br>
+        <b>Answer: 43.2 km/h</b>
+    </div>
+</div>
+
+<div class="question">
+    <b>Q7:</b> A person walks 10 km at 4 km/h and returns at 6 km/h. Find average speed.  
+    <button onclick="toggleSolution(6)">Show Solution</button>
+    <div class="solution">
+        Average speed = \( \frac{2 \cdot 4 \cdot 6}{4 + 6} = 4.8 \text{ km/h} \) <br>
+        <b>Answer: 4.8 km/h</b>
+    </div>
+</div>
+
+<div class="question">
+    <b>Q8:</b> A cyclist rides equal distances at 12 km/h and 18 km/h. Find average speed.  
+    <button onclick="toggleSolution(7)">Show Solution</button>
+    <div class="solution">
+        Average speed = \( \frac{2 \cdot 12 \cdot 18}{12 + 18} = 14.4 \text{ km/h} \) <br>
+        <b>Answer: 14.4 km/h</b>
+    </div>
+</div>
+
+<div class="question">
+    <b>Q9:</b> A train covers equal distances at 60 km/h and 90 km/h. Find average speed.  
+    <button onclick="toggleSolution(8)">Show Solution</button>
+    <div class="solution">
+        Average speed = \( \frac{2 \cdot 60 \cdot 90}{60 + 90} = 72 \text{ km/h} \) <br>
+        <b>Answer: 72 km/h</b>
+    </div>
+</div>
+
+<div class="question">
+    <b>Q10:</b> A vehicle travels equal distances at 45 km/h and 75 km/h. Find average speed.  
+    <button onclick="toggleSolution(9)">Show Solution</button>
+    <div class="solution">
+        Average speed = \( \frac{2 \cdot 45 \cdot 75}{45 + 75} = 56.25 \text{ km/h} \) <br>
+        <b>Answer: 56.25 km/h</b>
+    </div>
+</div>
+
+<div class="nav-buttons">
+    <a href="index.html"><button>Back to Average Topics</button></a>
+    <a href="avg-speed-equal-time.html"><button>Next Topic</button></a>
+</div>
+
+<script>
+    const solutions = document.querySelectorAll('.solution');
+    function toggleSolution(index) {
+        const sol = solutions[index];
+        sol.style.display = (sol.style.display === 'block') ? 'none' : 'block';
+        if (window.MathJax) MathJax.typesetPromise([sol]);
+    }
+</script>
+
+</body>
+</html>

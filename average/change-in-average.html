@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change in Average - TCS NQT Practice</title>
+
+    <!-- MathJax CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+        .question {
+            background: #fff;
+            padding: 15px 20px;
+            margin: 12px 0;
+            border-radius: 6px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .solution {
+            margin-top: 8px;
+            padding: 10px;
+            background: #eaf2f8;
+            border-left: 4px solid #2980b9;
+            display: none;
+        }
+        button {
+            margin: 10px 5px 10px 0;
+            padding: 8px 16px;
+            background-color: #2980b9;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #1f618d;
+        }
+        .nav-buttons {
+            text-align: center;
+            margin-top: 20px;
+        }
+        a {
+            color: #e74c3c;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Change in Average - TCS NQT Practice</h1>
+
+<!-- Q1 -->
+<div class="question">
+    <b>Q1:</b> Average of 10 numbers is 20. A new number is added to the group, and the average becomes 22. Find the number added.  
+    <button onclick="toggleSolution(0)">Show Solution</button>
+    <div class="solution">
+        Original sum = \(10 \times 20 = 200\) <br>
+        Let the number added = \(x\) <br>
+        New average: \((200 + x)/11 = 22\) <br>
+        Solve: \(200 + x = 242 \Rightarrow x = 42\) <br>
+        <b>Answer: 42</b>
+    </div>
+</div>
+
+<!-- Q2 -->
+<div class="question">
+    <b>Q2:</b> Average of 8 numbers is 15. One number is removed from the group, and the new average becomes 14. Find the number removed.  
+    <button onclick="toggleSolution(1)">Show Solution</button>
+    <div class="solution">
+        Original sum = \(8 \times 15 = 120\) <br>
+        Let removed number = \(x\) <br>
+        New sum / 7 = 14 → \(120 - x = 98 \Rightarrow x = 22\) <br>
+        <b>Answer: 22</b>
+    </div>
+</div>
+
+<!-- Q3 -->
+<div class="question">
+    <b>Q3:</b> Average of 12 numbers is 30. Three new numbers are added, and the new average becomes 32. Find the sum of the three numbers added.  
+    <button onclick="toggleSolution(2)">Show Solution</button>
+    <div class="solution">
+        Original sum = \(12 \times 30 = 360\) <br>
+        Let sum of three numbers added = \(S\) <br>
+        New average: \((360 + S)/15 = 32\) → \(360 + S = 480 \Rightarrow S = 120\) <br>
+        <b>Answer: 120</b>
+    </div>
+</div>
+
+<!-- Q4 -->
+<div class="question">
+    <b>Q4:</b> Average of 5 numbers is 40. One number is removed, and the average decreases by 5. Find the number removed.  
+    <button onclick="toggleSolution(3)">Show Solution</button>
+    <div class="solution">
+        Original sum = \(5 \times 40 = 200\) <br>
+        Let removed number = \(x\) <br>
+        New average = 35 → \((200 - x)/4 = 35 \Rightarrow 200 - x = 140 \Rightarrow x = 60\) <br>
+        <b>Answer: 60</b>
+    </div>
+</div>
+
+<!-- Q5 -->
+<div class="question">
+    <b>Q5:</b> Average of 6 numbers is 50. Two numbers are added, and the average becomes 52. Find the sum of the two numbers added.  
+    <button onclick="toggleSolution(4)">Show Solution</button>
+    <div class="solution">
+        Original sum = \(6 \times 50 = 300\) <br>
+        Let sum of two numbers = \(S\) <br>
+        New average: \((300 + S)/8 = 52 \Rightarrow 300 + S = 416 \Rightarrow S = 116\) <br>
+        <b>Answer: 116</b>
+    </div>
+</div>
+
+<!-- Q6 -->
+<div class="question">
+    <b>Q6:</b> Average of 10 numbers is 25. Two numbers are removed, and the new average becomes 23. Find the sum of the numbers removed.  
+    <button onclick="toggleSolution(5)">Show Solution</button>
+    <div class="solution">
+        Original sum = \(10 \times 25 = 250\) <br>
+        Let sum of removed numbers = \(S\) <br>
+        New average: \((250 - S)/8 = 23 \Rightarrow 250 - S = 184 \Rightarrow S = 66\) <br>
+        <b>Answer: 66</b>
+    </div>
+</div>
+
+<!-- Q7 -->
+<div class="question">
+    <b>Q7:</b> Average of 7 numbers is 28. One number is replaced by 40, and the new average becomes 30. Find the number replaced.  
+    <button onclick="toggleSolution(6)">Show Solution</button>
+    <div class="solution">
+        Original sum = \(7 \times 28 = 196\) <br>
+        Let replaced number = \(x\) <br>
+        New sum = \(196 - x + 40\) → New average: \((196 - x + 40)/7 = 30\) <br>
+        \(236 - x = 210 \Rightarrow x = 26\) <br>
+        <b>Answer: 26</b>
+    </div>
+</div>
+
+<!-- Q8 -->
+<div class="question">
+    <b>Q8:</b> Average of 5 numbers is 60. One number is added, and the average increases by 4. Find the number added.  
+    <button onclick="toggleSolution(7)">Show Solution</button>
+    <div class="solution">
+        Original sum = \(5 \times 60 = 300\) <br>
+        Let added number = \(x\) <br>
+        New average = 64 → \((300 + x)/6 = 64 \Rightarrow 300 + x = 384 \Rightarrow x = 84\) <br>
+        <b>Answer: 84</b>
+    </div>
+</div>
+
+<!-- Q9 -->
+<div class="question">
+    <b>Q9:</b> Average of 8 numbers is 45. One number is removed, and the new average decreases by 5. Find the number removed.  
+    <button onclick="toggleSolution(8)">Show Solution</button>
+    <div class="solution">
+        Original sum = \(8 \times 45 = 360\) <br>
+        Let removed number = \(x\) <br>
+        New average = 40 → \((360 - x)/7 = 40 \Rightarrow 360 - x = 280 \Rightarrow x = 80\) <br>
+        <b>Answer: 80</b>
+    </div>
+</div>
+
+<!-- Q10 -->
+<div class="question">
+    <b>Q10:</b> Average of 12 numbers is 35. Two numbers are added, and the new average becomes 37. Find the sum of the two numbers added.  
+    <button onclick="toggleSolution(9)">Show Solution</button>
+    <div class="solution">
+        Original sum = \(12 \times 35 = 420\) <br>
+        Let sum of two numbers added = \(S\) <br>
+        New average: \((420 + S)/14 = 37 \Rightarrow 420 + S = 518 \Rightarrow S = 98\) <br>
+        <b>Answer: 98</b>
+    </div>
+</div>
+
+<div class="nav-buttons">
+    <a href="index.html"><button>Back to Average Topics</button></a>
+    <a href="two-group-average.html"><button>Next Topic</button></a>
+</div>
+
+<script>
+    const solutions = document.querySelectorAll('.solution');
+    function toggleSolution(index) {
+        const sol = solutions[index];
+        sol.style.display = (sol.style.display === 'block') ? 'none' : 'block';
+        if (window.MathJax) MathJax.typesetPromise([sol]);
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profit Average Problems - TCS NQT</title>
+
+    <!-- MathJax CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+        .question {
+            background: #fff;
+            padding: 15px 20px;
+            margin: 12px 0;
+            border-radius: 6px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .solution {
+            margin-top: 8px;
+            padding: 10px;
+            background: #eaf2f8;
+            border-left: 4px solid #2980b9;
+            display: none;
+        }
+        button {
+            margin: 10px 5px 10px 0;
+            padding: 8px 16px;
+            background-color: #2980b9;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #1f618d;
+        }
+        .nav-buttons {
+            text-align: center;
+            margin-top: 20px;
+        }
+        a {
+            color: #e74c3c;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Profit Average Problems - TCS NQT Practice</h1>
+
+<!-- Q1 -->
+<div class="question">
+    <b>Q1:</b> Average profit of 5 shops is ₹2000. One shop earns ₹2500. Find the average profit of remaining 4 shops.  
+    <button onclick="toggleSolution(0)">Show Solution</button>
+    <div class="solution">
+        Total profit = 5 × 2000 = ₹10000 <br>
+        Remaining total = 10000 - 2500 = ₹7500 <br>
+        Average = 7500 / 4 = ₹1875 <br>
+        <b>Answer: ₹1875</b>
+    </div>
+</div>
+
+<!-- Q2 -->
+<div class="question">
+    <b>Q2:</b> Average profit of 10 traders is ₹1500. A new trader joins earning ₹2000. Find the new average.  
+    <button onclick="toggleSolution(1)">Show Solution</button>
+    <div class="solution">
+        Total = 10 × 1500 = ₹15000 <br>
+        New total = 15000 + 2000 = ₹17000 <br>
+        New average = 17000 / 11 ≈ ₹1545.45 <br>
+        <b>Answer: ₹1545.45</b>
+    </div>
+</div>
+
+<!-- Q3 -->
+<div class="question">
+    <b>Q3:</b> Average profit of a company for 6 months is ₹5000. In the 7th month, profit is ₹6500. Find new average.  
+    <button onclick="toggleSolution(2)">Show Solution</button>
+    <div class="solution">
+        Total = 6 × 5000 = ₹30000 <br>
+        New total = 30000 + 6500 = ₹36500 <br>
+        New average = 36500 / 7 ≈ ₹5214.29 <br>
+        <b>Answer: ₹5214.29</b>
+    </div>
+</div>
+
+<!-- Q4 -->
+<div class="question">
+    <b>Q4:</b> Average profit of 8 products is ₹1200. One product has profit ₹1500. Find the average of remaining 7 products.  
+    <button onclick="toggleSolution(3)">Show Solution</button>
+    <div class="solution">
+        Total = 8 × 1200 = ₹9600 <br>
+        Remaining total = 9600 - 1500 = ₹8100 <br>
+        Average = 8100 / 7 ≈ ₹1157.14 <br>
+        <b>Answer: ₹1157.14</b>
+    </div>
+</div>
+
+<!-- Q5 -->
+<div class="question">
+    <b>Q5:</b> Average profit of 12 shops is ₹1800. One shop leaves with profit ₹2000. Find new average.  
+    <button onclick="toggleSolution(4)">Show Solution</button>
+    <div class="solution">
+        Total = 12 × 1800 = ₹21600 <br>
+        Remaining total = 21600 - 2000 = ₹19600 <br>
+        New average = 19600 / 11 ≈ ₹1781.82 <br>
+        <b>Answer: ₹1781.82</b>
+    </div>
+</div>
+
+<!-- Q6 -->
+<div class="question">
+    <b>Q6:</b> Average profit of 7 traders is ₹2200. Two traders earn ₹2500 and ₹2700. Find average profit of remaining 5 traders.  
+    <button onclick="toggleSolution(5)">Show Solution</button>
+    <div class="solution">
+        Total = 7 × 2200 = ₹15400 <br>
+        Remaining total = 15400 - (2500 + 2700) = ₹10200 <br>
+        Average = 10200 / 5 = ₹2040 <br>
+        <b>Answer: ₹2040</b>
+    </div>
+</div>
+
+<!-- Q7 -->
+<div class="question">
+    <b>Q7:</b> Average monthly profit of a company is ₹4500 for 10 months. In the 11th month, profit increases to ₹6000. Find new average.  
+    <button onclick="toggleSolution(6)">Show Solution</button>
+    <div class="solution">
+        Total = 10 × 4500 = ₹45000 <br>
+        New total = 45000 + 6000 = ₹51000 <br>
+        New average = 51000 / 11 ≈ ₹4636.36 <br>
+        <b>Answer: ₹4636.36</b>
+    </div>
+</div>
+
+<!-- Q8 -->
+<div class="question">
+    <b>Q8:</b> Average profit of 5 items is ₹800. One item earns ₹1000. Find average profit of remaining 4 items.  
+    <button onclick="toggleSolution(7)">Show Solution</button>
+    <div class="solution">
+        Total = 5 × 800 = ₹4000 <br>
+        Remaining total = 4000 - 1000 = ₹3000 <br>
+        Average = 3000 / 4 = ₹750 <br>
+        <b>Answer: ₹750</b>
+    </div>
+</div>
+
+<!-- Q9 -->
+<div class="question">
+    <b>Q9:</b> Average profit of 6 shops is ₹900. One shop earns ₹1200. Find new average.  
+    <button onclick="toggleSolution(8)">Show Solution</button>
+    <div class="solution">
+        Total = 6 × 900 = ₹5400 <br>
+        New total = 5400 - 900 + 1200 = ₹5700 <br>
+        New average = 5700 / 6 = ₹950 <br>
+        <b>Answer: ₹950</b>
+    </div>
+</div>
+
+<!-- Q10 -->
+<div class="question">
+    <b>Q10:</b> Average profit of 8 months is ₹3500. In the 9th month, profit is ₹4200. Find new average.  
+    <button onclick="toggleSolution(9)">Show Solution</button>
+    <div class="solution">
+        Total = 8 × 3500 = ₹28000 <br>
+        New total = 28000 + 4200 = ₹32200 <br>
+        New average = 32200 / 9 ≈ ₹3577.78 <br>
+        <b>Answer: ₹3577.78</b>
+    </div>
+</div>
+
+<div class="nav-buttons">
+    <a href="index.html"><button>Back to Average Topics</button></a>
+    <a href="avg-speed-equal-time.html"><button>Next Topic</button></a>
+</div>
+
+<script>
+    const solutions = document.querySelectorAll('.solution');
+    function toggleSolution(index) {
+        const sol = solutions[index];
+        sol.style.display = (sol.style.display === 'block') ? 'none' : 'block';
+        if (window.MathJax) MathJax.typesetPromise([sol]);
+    }
+</script>
+
+</body>
+</html>

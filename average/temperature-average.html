@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Average Problems - TCS NQT</title>
+
+    <!-- MathJax CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+        .question {
+            background: #fff;
+            padding: 15px 20px;
+            margin: 12px 0;
+            border-radius: 6px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .solution {
+            margin-top: 8px;
+            padding: 10px;
+            background: #eaf2f8;
+            border-left: 4px solid #2980b9;
+            display: none;
+        }
+        button {
+            margin: 10px 5px 10px 0;
+            padding: 8px 16px;
+            background-color: #2980b9;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #1f618d;
+        }
+        .nav-buttons {
+            text-align: center;
+            margin-top: 20px;
+        }
+        a {
+            color: #e74c3c;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Temperature Average Problems - TCS NQT Practice</h1>
+
+<!-- Q1 -->
+<div class="question">
+    <b>Q1:</b> Average temperature of 5 days is 30°C. On one day it was 35°C. Find the average of the remaining 4 days.  
+    <button onclick="toggleSolution(0)">Show Solution</button>
+    <div class="solution">
+        Total temperature = 5 × 30 = 150°C <br>
+        Remaining total = 150 - 35 = 115°C <br>
+        Average = 115 / 4 = 28.75°C <br>
+        <b>Answer: 28.75°C</b>
+    </div>
+</div>
+
+<!-- Q2 -->
+<div class="question">
+    <b>Q2:</b> Average temperature of a week (7 days) is 25°C. A new 8th day has 30°C. Find the new average.  
+    <button onclick="toggleSolution(1)">Show Solution</button>
+    <div class="solution">
+        Total = 7 × 25 = 175°C <br>
+        New total = 175 + 30 = 205°C <br>
+        New average = 205 / 8 ≈ 25.625°C <br>
+        <b>Answer: 25.625°C</b>
+    </div>
+</div>
+
+<!-- Q3 -->
+<div class="question">
+    <b>Q3:</b> Average temperature of Monday to Friday is 32°C. Saturday temperature is 36°C. Find the new average.  
+    <button onclick="toggleSolution(2)">Show Solution</button>
+    <div class="solution">
+        Total Mon-Fri = 5 × 32 = 160°C <br>
+        New total = 160 + 36 = 196°C <br>
+        Average = 196 / 6 ≈ 32.67°C <br>
+        <b>Answer: 32.67°C</b>
+    </div>
+</div>
+
+<!-- Q4 -->
+<div class="question">
+    <b>Q4:</b> Average temperature of 6 days is 28°C. On one day it was 34°C. Find the average of remaining 5 days.  
+    <button onclick="toggleSolution(3)">Show Solution</button>
+    <div class="solution">
+        Total = 6 × 28 = 168°C <br>
+        Remaining total = 168 - 34 = 134°C <br>
+        Average = 134 / 5 = 26.8°C <br>
+        <b>Answer: 26.8°C</b>
+    </div>
+</div>
+
+<!-- Q5 -->
+<div class="question">
+    <b>Q5:</b> Average temperature of a month of 30 days is 24°C. A new day’s reading of 30°C is recorded. Find the new average.  
+    <button onclick="toggleSolution(4)">Show Solution</button>
+    <div class="solution">
+        Total = 30 × 24 = 720°C <br>
+        New total = 720 + 30 = 750°C <br>
+        New average = 750 / 31 ≈ 24.19°C <br>
+        <b>Answer: 24.19°C</b>
+    </div>
+</div>
+
+<!-- Q6 -->
+<div class="question">
+    <b>Q6:</b> Average temperature of 10 cities is 20°C. One city reports 28°C. Find new average.  
+    <button onclick="toggleSolution(5)">Show Solution</button>
+    <div class="solution">
+        Total = 10 × 20 = 200°C <br>
+        New total = 200 + 28 = 228°C <br>
+        New average = 228 / 11 ≈ 20.73°C <br>
+        <b>Answer: 20.73°C</b>
+    </div>
+</div>
+
+<!-- Q7 -->
+<div class="question">
+    <b>Q7:</b> Average temperature of 5 days is 27°C. One day temperature increases to 33°C. Find new average.  
+    <button onclick="toggleSolution(6)">Show Solution</button>
+    <div class="solution">
+        Total = 5 × 27 = 135°C <br>
+        Replace old value with 33°C → Total = 135 - x + 33 (assume x is old temp, e.g., 27) <br>
+        New average = (135 - 27 + 33)/5 = 141 / 5 = 28.2°C <br>
+        <b>Answer: 28.2°C</b>
+    </div>
+</div>
+
+<!-- Q8 -->
+<div class="question">
+    <b>Q8:</b> Average temperature of 7 days is 22°C. Two days report 25°C and 28°C. Find average of remaining 5 days.  
+    <button onclick="toggleSolution(7)">Show Solution</button>
+    <div class="solution">
+        Total = 7 × 22 = 154°C <br>
+        Remaining total = 154 - (25+28) = 101°C <br>
+        Average = 101 / 5 = 20.2°C <br>
+        <b>Answer: 20.2°C</b>
+    </div>
+</div>
+
+<!-- Q9 -->
+<div class="question">
+    <b>Q9:</b> Average temperature of 12 days is 26°C. A new day of 32°C is recorded. Find new average.  
+    <button onclick="toggleSolution(8)">Show Solution</button>
+    <div class="solution">
+        Total = 12 × 26 = 312°C <br>
+        New total = 312 + 32 = 344°C <br>
+        New average = 344 / 13 ≈ 26.46°C <br>
+        <b>Answer: 26.46°C</b>
+    </div>
+</div>
+
+<!-- Q10 -->
+<div class="question">
+    <b>Q10:</b> Average temperature of 8 days is 30°C. One day leaves out a reading of 36°C. Find new average of remaining 7 days.  
+    <button onclick="toggleSolution(9)">Show Solution</button>
+    <div class="solution">
+        Total = 8 × 30 = 240°C <br>
+        Remaining total = 240 - 36 = 204°C <br>
+        Average = 204 / 7 ≈ 29.14°C <br>
+        <b>Answer: 29.14°C</b>
+    </div>
+</div>
+
+<div class="nav-buttons">
+    <a href="index.html"><button>Back to Average Topics</button></a>
+    <a href="production-average.html"><button>Next Topic</button></a>
+</div>
+
+<script>
+    const solutions = document.querySelectorAll('.solution');
+    function toggleSolution(index) {
+        const sol = solutions[index];
+        sol.style.display = (sol.style.display === 'block') ? 'none' : 'block';
+        if (window.MathJax) MathJax.typesetPromise([sol]);
+    }
+</script>
+
+</body>
+</html>

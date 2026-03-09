@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Missing Number in Average - TCS NQT</title>
+
+    <!-- MathJax CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" id="MathJax-script" async></script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+        .question {
+            background: #fff;
+            padding: 15px 20px;
+            margin: 12px 0;
+            border-radius: 6px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .solution {
+            margin-top: 8px;
+            padding: 10px;
+            background: #eaf2f8;
+            border-left: 4px solid #2980b9;
+            display: none;
+        }
+        button {
+            margin: 10px 5px 10px 0;
+            padding: 8px 16px;
+            background-color: #2980b9;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #1f618d;
+        }
+        .nav-buttons {
+            text-align: center;
+            margin-top: 20px;
+        }
+        a {
+            color: #e74c3c;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Advanced Missing Number in Average - TCS NQT</h1>
+
+    <!-- Q1 -->
+    <div class="question">
+        <b>Q1:</b> The average of 5 numbers is 23. Four of the numbers are 20, 26, 25, 22. Find the missing number.  
+        <button onclick="toggleSolution(0)">Show Solution</button>
+        <div class="solution">
+            Let missing number = \(x\) <br>
+            Sum of 4 numbers = \(20+26+25+22=93\) <br>
+            Total sum needed = \(5 \times 23 = 115\) <br>
+            Missing number: \(x = 115-93 = 22\) <br>
+            <b>Answer: 22</b>
+        </div>
+    </div>
+
+    <!-- Q2 -->
+    <div class="question">
+        <b>Q2:</b> Average of 6 numbers is 45. Five numbers are 40, 50, 42, 48, 45. Find the missing number.  
+        <button onclick="toggleSolution(1)">Show Solution</button>
+        <div class="solution">
+            Sum of 5 numbers = \(40+50+42+48+45=225\) <br>
+            Total sum = \(6 \times 45 = 270\) <br>
+            Missing number = \(270-225 = 45\) <br>
+            <b>Answer: 45</b>
+        </div>
+    </div>
+
+    <!-- Q3 -->
+    <div class="question">
+        <b>Q3:</b> The average of 4 numbers is 18. Three numbers are 15, 20, 17. Find the missing number.  
+        <button onclick="toggleSolution(2)">Show Solution</button>
+        <div class="solution">
+            Sum of 3 numbers = \(15+20+17=52\) <br>
+            Total sum = \(4 \times 18 = 72\) <br>
+            Missing number = \(72-52 = 20\) <br>
+            <b>Answer: 20</b>
+        </div>
+    </div>
+
+    <!-- Q4 -->
+    <div class="question">
+        <b>Q4:</b> Average of 5 numbers is 30. Four numbers are 28, 32, 26, 34. Find the missing number.  
+        <button onclick="toggleSolution(3)">Show Solution</button>
+        <div class="solution">
+            Sum of 4 numbers = \(28+32+26+34=120\) <br>
+            Total sum = \(5 \times 30 = 150\) <br>
+            Missing number = \(150-120 = 30\) <br>
+            <b>Answer: 30</b>
+        </div>
+    </div>
+
+    <!-- Q5 -->
+    <div class="question">
+        <b>Q5:</b> Average of 7 numbers is 50. Six numbers are 45, 55, 60, 40, 50, 48. Find the missing number.  
+        <button onclick="toggleSolution(4)">Show Solution</button>
+        <div class="solution">
+            Sum of 6 numbers = \(45+55+60+40+50+48=298\) <br>
+            Total sum = \(7 \times 50 = 350\) <br>
+            Missing number = \(350-298 = 52\) <br>
+            <b>Answer: 52</b>
+        </div>
+    </div>
+
+    <!-- Q6 -->
+    <div class="question">
+        <b>Q6:</b> Average of 3 numbers is 16. Two numbers are 15.5 and 17.2. Find the missing number.  
+        <button onclick="toggleSolution(5)">Show Solution</button>
+        <div class="solution">
+            Sum of 2 numbers = \(15.5+17.2=32.7\) <br>
+            Total sum = \(3 \times 16 = 48\) <br>
+            Missing number = \(48-32.7 = 15.3\) <br>
+            <b>Answer: 15.3</b>
+        </div>
+    </div>
+
+    <!-- Q7 -->
+    <div class="question">
+        <b>Q7:</b> The average of 8 numbers is 120. Seven numbers are 100, 130, 110, 140, 120, 125, 115. Find the missing number.  
+        <button onclick="toggleSolution(6)">Show Solution</button>
+        <div class="solution">
+            Sum of 7 numbers = \(100+130+110+140+120+125+115=840\) <br>
+            Total sum = \(8 \times 120 = 960\) <br>
+            Missing number = \(960-840 = 120\) <br>
+            <b>Answer: 120</b>
+        </div>
+    </div>
+
+    <!-- Q8 -->
+    <div class="question">
+        <b>Q8:</b> Average of 4 numbers is 72. Three numbers are 68, 75, 70. Find the missing number.  
+        <button onclick="toggleSolution(7)">Show Solution</button>
+        <div class="solution">
+            Sum of 3 numbers = \(68+75+70=213\) <br>
+            Total sum = \(4 \times 72 = 288\) <br>
+            Missing number = \(288-213 = 75\) <br>
+            <b>Answer: 75</b>
+        </div>
+    </div>
+
+    <!-- Q9 -->
+    <div class="question">
+        <b>Q9:</b> Average of 5 numbers is 45. Four numbers are 40, 50, 44, 46. Find the missing number.  
+        <button onclick="toggleSolution(8)">Show Solution</button>
+        <div class="solution">
+            Sum of 4 numbers = \(40+50+44+46=180\) <br>
+            Total sum = \(5 \times 45 = 225\) <br>
+            Missing number = \(225-180 = 45\) <br>
+            <b>Answer: 45</b>
+        </div>
+    </div>
+
+    <!-- Q10 -->
+    <div class="question">
+        <b>Q10:</b> Average of 6 numbers is 250. Five numbers are 200, 300, 260, 240, 270. Find the missing number.  
+        <button onclick="toggleSolution(9)">Show Solution</button>
+        <div class="solution">
+            Sum of 5 numbers = \(200+300+260+240+270=1270\) <br>
+            Total sum = \(6 \times 250 = 1500\) <br>
+            Missing number = \(1500-1270 = 230\) <br>
+            <b>Answer: 230</b>
+        </div>
+    </div>
+
+    <div class="nav-buttons">
+        <a href="index.html"><button>Back to Average Topics</button></a>
+        <a href="next-topic.html"><button>Next Topic</button></a>
+    </div>
+
+    <script>
+        const solutions = document.querySelectorAll('.solution');
+        function toggleSolution(index) {
+            const sol = solutions[index];
+            if (sol.style.display === 'block') {
+                sol.style.display = 'none';
+            } else {
+                sol.style.display = 'block';
+                if (window.MathJax) {
+                    MathJax.typesetPromise([sol]);
+                }
+            }
+        }
+    </script>
+</body>
+</html>

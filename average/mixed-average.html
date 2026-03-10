@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mixed Average - TCS NQT</title>
+
+<!-- MathJax CDN -->
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
+
+<style>
+    body { font-family: Arial, sans-serif; background: #f7f7f7; padding: 20px; color: #333; }
+    h1 { text-align: center; color: #2c3e50; }
+    .question { background: #fff; padding: 15px 20px; margin: 12px 0; border-radius: 6px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);}
+    .solution { margin-top: 8px; padding: 10px; background: #eaf2f8; border-left: 4px solid #2980b9; display: none; }
+    button { margin: 10px 5px; padding: 8px 16px; background-color: #2980b9; color: white; border: none; border-radius: 4px; cursor: pointer; }
+    button:hover { background-color: #1f618d; }
+    .nav-buttons { text-align: center; margin-top: 20px; }
+    a { color: #e74c3c; text-decoration: none; font-weight: bold; }
+</style>
+</head>
+<body>
+
+<h1>Mixed Average Questions - TCS NQT</h1>
+
+<!-- Q1 -->
+<div class="question">
+<b>Q1:</b> A batsman scores 45, 60, 30, and 75 runs in four innings. Find his average.  
+<button onclick="toggleSolution(0)">Show Solution</button>
+<div class="solution">
+Total runs = 45 + 60 + 30 + 75 = 210 <br>
+Average = 210 / 4 = 52.5 <br>
+<b>Answer: 52.5</b>
+</div>
+</div>
+
+<!-- Q2 -->
+<div class="question">
+<b>Q2:</b> Average salary of 5 employees is ₹20,000. Find total salary.  
+<button onclick="toggleSolution(1)">Show Solution</button>
+<div class="solution">
+Total salary = 5 × 20,000 = ₹1,00,000 <br>
+<b>Answer: ₹1,00,000</b>
+</div>
+</div>
+
+<!-- Q3 -->
+<div class="question">
+<b>Q3:</b> A car travels 60 km at 30 km/h and 90 km at 60 km/h. Find average speed.  
+<button onclick="toggleSolution(2)">Show Solution</button>
+<div class="solution">
+Total Distance = 60 + 90 = 150 km <br>
+Time1 = 60/30 = 2 h, Time2 = 90/60 = 1.5 h <br>
+Total Time = 2 + 1.5 = 3.5 h <br>
+Average Speed = 150 / 3.5 ≈ 42.86 km/h <br>
+<b>Answer: 42.86 km/h</b>
+</div>
+</div>
+
+<!-- Q4 -->
+<div class="question">
+<b>Q4:</b> A bowler has taken 40 wickets at an average of 20. He takes 5 wickets for 50 runs in the next match. Find his updated bowling average.  
+<button onclick="toggleSolution(3)">Show Solution</button>
+<div class="solution">
+Total runs = 40 × 20 = 800 <br>
+Add next match: 800 + 50 = 850 <br>
+Total wickets = 40 + 5 = 45 <br>
+New bowling average = 850 / 45 ≈ 18.89 <br>
+<b>Answer: 18.89</b>
+</div>
+</div>
+
+<!-- Q5 -->
+<div class="question">
+<b>Q5:</b> Average salary of 8 employees is ₹25,000. One employee joins with ₹30,000. Find new average.  
+<button onclick="toggleSolution(4)">Show Solution</button>
+<div class="solution">
+Total salary = 8 × 25,000 = 2,00,000 <br>
+Add new salary: 2,00,000 + 30,000 = 2,30,000 <br>
+Total employees = 9 <br>
+New average = 2,30,000 / 9 ≈ ₹25,555.56 <br>
+<b>Answer: ₹25,555.56</b>
+</div>
+</div>
+
+<!-- Q6 -->
+<div class="question">
+<b>Q6:</b> A cyclist rides 30 km at 10 km/h and 45 km at 15 km/h. Find average speed.  
+<button onclick="toggleSolution(5)">Show Solution</button>
+<div class="solution">
+Total Distance = 30 + 45 = 75 km <br>
+Time1 = 30/10 = 3 h, Time2 = 45/15 = 3 h <br>
+Total Time = 3 + 3 = 6 h <br>
+Average Speed = 75 / 6 = 12.5 km/h <br>
+<b>Answer: 12.5 km/h</b>
+</div>
+</div>
+
+<!-- Q7 -->
+<div class="question">
+<b>Q7:</b> A batsman has an average of 45 after 20 innings. He scores 30 in the next innings. Find his new average.  
+<button onclick="toggleSolution(6)">Show Solution</button>
+<div class="solution">
+Total runs = 20 × 45 = 900 <br>
+Add next score: 900 + 30 = 930 <br>
+Total innings = 21 <br>
+New average = 930 / 21 ≈ 44.29 <br>
+<b>Answer: 44.29</b>
+</div>
+</div>
+
+<!-- Q8 -->
+<div class="question">
+<b>Q8:</b> Average salary of 10 employees is ₹28,000. Two leave with salaries ₹30,000 and ₹26,000. Find new average.  
+<button onclick="toggleSolution(7)">Show Solution</button>
+<div class="solution">
+Total salary = 10 × 28,000 = 2,80,000 <br>
+After leaving: 2,80,000 - 30,000 - 26,000 = 2,24,000 <br>
+Remaining employees = 8 <br>
+New average = 2,24,000 / 8 = ₹28,000 <br>
+<b>Answer: ₹28,000</b>
+</div>
+</div>
+
+<!-- Q9 -->
+<div class="question">
+<b>Q9:</b> A vehicle covers 150 km at 50 km/h and 50 km at 25 km/h. Find average speed.  
+<button onclick="toggleSolution(8)">Show Solution</button>
+<div class="solution">
+Total Distance = 150 + 50 = 200 km <br>
+Time1 = 150/50 = 3 h, Time2 = 50/25 = 2 h <br>
+Total Time = 3 + 2 = 5 h <br>
+Average Speed = 200 / 5 = 40 km/h <br>
+<b>Answer: 40 km/h</b>
+</div>
+</div>
+
+<!-- Q10 -->
+<div class="question">
+<b>Q10:</b> A bowler has an average of 18 after 60 wickets. He takes 6 wickets for 120 runs in the next match. Find updated average.  
+<button onclick="toggleSolution(9)">Show Solution</button>
+<div class="solution">
+Total runs = 60 × 18 = 1080 <br>
+Add next match: 1080 + 120 = 1200 <br>
+Total wickets = 60 + 6 = 66 <br>
+New bowling average = 1200 / 66 ≈ 18.18 <br>
+<b>Answer: 18.18</b>
+</div>
+</div>
+
+<div class="nav-buttons">
+<a href="alligation-average.html"><button>Next Topic</button></a>
+<a href="index.html"><button>Back to Topics</button></a>
+</div>
+
+<script>
+const solutions = document.querySelectorAll('.solution');
+function toggleSolution(index) {
+    const sol = solutions[index];
+    sol.style.display = (sol.style.display === 'block') ? 'none' : 'block';
+    if (window.MathJax) MathJax.typesetPromise([sol]);
+}
+</script>
+
+</body>
+</html>

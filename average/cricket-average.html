@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cricket Average - TCS NQT</title>
+
+<!-- MathJax CDN -->
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
+
+<style>
+    body { font-family: Arial, sans-serif; background: #f7f7f7; padding: 20px; color: #333; }
+    h1 { text-align: center; color: #2c3e50; }
+    .question { background: #fff; padding: 15px 20px; margin: 12px 0; border-radius: 6px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);}
+    .solution { margin-top: 8px; padding: 10px; background: #eaf2f8; border-left: 4px solid #2980b9; display: none; }
+    button { margin: 10px 5px; padding: 8px 16px; background-color: #2980b9; color: white; border: none; border-radius: 4px; cursor: pointer; }
+    button:hover { background-color: #1f618d; }
+    .nav-buttons { text-align: center; margin-top: 20px; }
+    a { color: #e74c3c; text-decoration: none; font-weight: bold; }
+</style>
+</head>
+<body>
+
+<h1>Cricket Average Questions - TCS NQT</h1>
+
+<!-- Q1 -->
+<div class="question">
+<b>Q1:</b> A batsman scores 600 runs in 15 innings. Find his average.  
+<button onclick="toggleSolution(0)">Show Solution</button>
+<div class="solution">
+Average = Total runs / Innings = 600 / 15 = 40 <br>
+<b>Answer: 40</b>
+</div>
+</div>
+
+<!-- Q2 -->
+<div class="question">
+<b>Q2:</b> A batsman has an average of 45 after 20 innings. He scores 30 in the next innings. Find his new average.  
+<button onclick="toggleSolution(1)">Show Solution</button>
+<div class="solution">
+Total runs = 20 × 45 = 900 <br>
+Add next score: 900 + 30 = 930 <br>
+Total innings = 21 <br>
+New average = 930 / 21 ≈ 44.29 <br>
+<b>Answer: 44.29</b>
+</div>
+</div>
+
+<!-- Q3 -->
+<div class="question">
+<b>Q3:</b> A bowler has taken 40 wickets at an average of 20. He takes 5 wickets for 50 runs in the next match. Find his updated bowling average.  
+<button onclick="toggleSolution(2)">Show Solution</button>
+<div class="solution">
+Total runs conceded = 40 × 20 = 800 <br>
+Add next match: 800 + 50 = 850 <br>
+Total wickets = 40 + 5 = 45 <br>
+New bowling average = 850 / 45 ≈ 18.89 <br>
+<b>Answer: 18.89</b>
+</div>
+</div>
+
+<!-- Q4 -->
+<div class="question">
+<b>Q4:</b> A batsman’s average is 50 after 10 innings. He scores 0 in the next innings, and his average drops to 45. Find total runs scored in first 10 innings.  
+<button onclick="toggleSolution(3)">Show Solution</button>
+<div class="solution">
+Total runs after 11 innings = 11 × 45 = 495 <br>
+So, runs in first 10 innings = 495 - 0 = 495 <br>
+<b>Answer: 495 runs</b>
+</div>
+</div>
+
+<!-- Q5 -->
+<div class="question">
+<b>Q5:</b> A bowler’s average is 22 after 50 wickets. He takes 6 wickets for 120 runs in the next match. Find his new average.  
+<button onclick="toggleSolution(4)">Show Solution</button>
+<div class="solution">
+Total runs conceded = 50 × 22 = 1100 <br>
+Add next match: 1100 + 120 = 1220 <br>
+Total wickets = 50 + 6 = 56 <br>
+New bowling average = 1220 / 56 ≈ 21.79 <br>
+<b>Answer: 21.79</b>
+</div>
+</div>
+
+<!-- Q6 -->
+<div class="question">
+<b>Q6:</b> A batsman scores 45, 60, 30, and 75 in four consecutive innings. Find his average.  
+<button onclick="toggleSolution(5)">Show Solution</button>
+<div class="solution">
+Total runs = 45 + 60 + 30 + 75 = 210 <br>
+Average = 210 / 4 = 52.5 <br>
+<b>Answer: 52.5</b>
+</div>
+</div>
+
+<!-- Q7 -->
+<div class="question">
+<b>Q7:</b> A bowler has conceded 900 runs for 45 wickets. Find his bowling average.  
+<button onclick="toggleSolution(6)">Show Solution</button>
+<div class="solution">
+Bowling average = Total runs / Wickets = 900 / 45 = 20 <br>
+<b>Answer: 20</b>
+</div>
+</div>
+
+<!-- Q8 -->
+<div class="question">
+<b>Q8:</b> A batsman has scored 1200 runs in 25 innings. What is his average?  
+<button onclick="toggleSolution(7)">Show Solution</button>
+<div class="solution">
+Average = 1200 / 25 = 48 <br>
+<b>Answer: 48</b>
+</div>
+</div>
+
+<!-- Q9 -->
+<div class="question">
+<b>Q9:</b> A bowler has an average of 18 after 60 wickets. He takes 6 wickets for 120 runs in the next match. Find his updated bowling average.  
+<button onclick="toggleSolution(8)">Show Solution</button>
+<div class="solution">
+Total runs = 60 × 18 = 1080 <br>
+Add next match: 1080 + 120 = 1200 <br>
+Total wickets = 60 + 6 = 66 <br>
+New bowling average = 1200 / 66 ≈ 18.18 <br>
+<b>Answer: 18.18</b>
+</div>
+</div>
+
+<!-- Q10 -->
+<div class="question">
+<b>Q10:</b> A batsman has an average of 40 after 15 innings. He scores 20, 50, and 30 in the next three innings. Find his new average.  
+<button onclick="toggleSolution(9)">Show Solution</button>
+<div class="solution">
+Total runs = 15 × 40 = 600 <br>
+Add new scores: 600 + 20 + 50 + 30 = 700 <br>
+Total innings = 18 <br>
+New average = 700 / 18 ≈ 38.89 <br>
+<b>Answer: 38.89</b>
+</div>
+</div>
+
+<div class="nav-buttons">
+<a href="salary-average.html"><button>Back to Average Speed</button></a>
+<a href="index.html"><button>Back to Topics</button></a>
+</div>
+
+<script>
+const solutions = document.querySelectorAll('.solution');
+function toggleSolution(index) {
+    const sol = solutions[index];
+    sol.style.display = (sol.style.display === 'block') ? 'none' : 'block';
+    if (window.MathJax) MathJax.typesetPromise([sol]);
+}
+</script>
+
+</body>
+</html>
